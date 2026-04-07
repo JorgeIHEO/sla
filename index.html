@@ -1,0 +1,491 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Steinberg Leiva — Arquitectos</title>
+  <meta name="description" content="Estudio de arquitectura con visión estratégica. Diseño, planificación y dirección de proyectos.">
+
+  <!-- Fuente principal → carpeta fuentes/ -->
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link rel="stylesheet" href="fuentes/montserrat.css">
+
+  <!-- Estilos externos -->
+  <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+
+  <!-- ══════════════════════════════
+       NAV
+  ══════════════════════════════ -->
+  <nav>
+    <a href="#inicio" class="nav-logo" aria-label="Inicio">
+      <img src="imagenes/logo.svg" alt="Steinberg Leiva" width="120" height="62">
+    </a>
+
+    <div style="display:flex;align-items:center;gap:2rem">
+      <!-- LinkedIn -->
+      <a href="https://linkedin.com" target="_blank" rel="noopener" class="nav-social" aria-label="LinkedIn">
+        <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round">
+          <rect x="2" y="2" width="20" height="20" rx="4"/><path d="M8 11v5M8 8v.01M12 16v-5M12 13a2 2 0 0 1 4 0v3"/>
+        </svg>
+      </a>
+      <a href="#contacto" class="nav-cta">Hablemos →</a>
+    </div>
+  </nav>
+
+  <!-- ══════════════════════════════
+       HERO
+  ══════════════════════════════ -->
+  <section class="hero" id="inicio">
+    <div class="hero-left">
+      <span class="hero-index">Steinberg Leiva — Arquitectos</span>
+
+      <h1 class="hero-title">
+        Espacios diseñados<br>para tu <em>forma</em><br>de vivir.
+      </h1>
+
+      <p class="hero-sub">
+        Diseñamos y construimos, nuevos usos de los inmuebles respetando su valor y creando espacios funcionales y amables para tu vida.
+      </p>
+
+      <a href="#portfolio" class="btn-primary">
+        Ver proyectos
+        <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+          <path d="M5 12h14M12 5l7 7-7 7"/>
+        </svg>
+      </a>
+    </div>
+
+    <div class="hero-right">
+      <!-- REEMPLAZAR: foto principal del estudio/proyecto destacado -->
+      <img
+        src="imagenes/hero.jpg"
+        alt="Proyecto destacado Steinberg Leiva"
+        loading="eager"
+        width="1200"
+        height="900"
+      >
+      <span class="hero-caption">Santiago, Chile · 2024</span>
+    </div>
+  </section>
+
+  <!-- ══════════════════════════════
+       TRUST BAR
+  ══════════════════════════════ -->
+  <div class="trust-bar">
+    <div class="trust-item">
+      <span class="trust-num">2019</span>
+      <span class="trust-label">Desde</span>
+    </div>
+    <div class="trust-item">
+      <span class="trust-num">+60</span>
+      <span class="trust-label">Proyectos y obras</span>
+    </div>
+    <div class="trust-item">
+      <span class="trust-num">RM &amp; V</span>
+      <span class="trust-label">Trabajos en Región Metropolitana y Valparaíso</span>
+    </div>
+  </div>
+
+  <!-- ══════════════════════════════
+       PROPUESTA
+  ══════════════════════════════ -->
+  <section class="propuesta" id="propuesta">
+    <div>
+      <p class="section-eyebrow">Nuestra oficina</p>
+      <h2 class="prop-title">Quiénes somos</h2>
+    </div>
+
+    <div class="pilares">
+      <div class="pilar">
+        <span class="pilar-num">01</span>
+        <div>
+          <p class="pilar-text">Está formada por la asociación de Mariela Leiva y Arturo Steinberg, ambos arquitectos de la Universidad de Chile. Mezcla profesional creativa y técnica, con experiencias y especializaciones diversas y complementarias.</p>
+        </div>
+      </div>
+      <div class="pilar">
+        <span class="pilar-num">02</span>
+        <div>
+          <p class="pilar-text">Su trabajo se centra en la realización de proyectos de arquitectura y construcción, como de rehabilitación en edificaciones de valor patrimonial, considerando remodelación, ampliación, interiorismo; entre otros.</p>
+        </div>
+      </div>
+      <div class="pilar">
+        <span class="pilar-num">03</span>
+        <div>
+          <p class="pilar-text">También considera asesorías en relación con la compra o venta de inmuebles o terrenos, y su relación con los permisos y acciones necesarias para optimizar el capital.</p>
+        </div>
+      </div>
+      <div class="pilar">
+        <span class="pilar-num">04</span>
+        <div>
+          <p class="pilar-text">Contamos con un equipo de trabajo integral, compuesto por diversos profesionales especialistas; además de un equipo calificado para la ejecución de obras.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ══════════════════════════════
+       PORTFOLIO — 8 proyectos con carrusel
+  ══════════════════════════════ -->
+  <section class="portfolio" id="portfolio">
+    <div class="port-header">
+      <h2 class="port-title">Proyectos destacados</h2>
+      <a href="#contacto" class="btn-text">Contáctanos →</a>
+    </div>
+
+    <div class="proj-cards-grid">
+
+      <!-- PROYECTO 1 -->
+      <div class="proj-card">
+        <div class="proj-carousel" data-index="0">
+          <div class="proj-carousel-track">
+            <img src="imagenes/p1-a.jpg" alt="Proyecto 1 imagen 1" loading="lazy">
+            <img src="imagenes/p1-b.jpg" alt="Proyecto 1 imagen 2" loading="lazy">
+            <img src="imagenes/p1-c.jpg" alt="Proyecto 1 imagen 3" loading="lazy">
+          </div>
+          <button class="carousel-btn prev" aria-label="Anterior">&#8592;</button>
+          <button class="carousel-btn next" aria-label="Siguiente">&#8594;</button>
+          <div class="carousel-dots">
+            <span class="dot active"></span><span class="dot"></span><span class="dot"></span>
+          </div>
+        </div>
+        <div class="proj-card-info">
+          <p class="proj-cat">Residencial</p>
+          <p class="proj-name">Proyecto 1</p>
+        </div>
+      </div>
+
+      <!-- PROYECTO 2 -->
+      <div class="proj-card">
+        <div class="proj-carousel" data-index="0">
+          <div class="proj-carousel-track">
+            <img src="imagenes/p2-a.jpg" alt="Proyecto 2 imagen 1" loading="lazy">
+            <img src="imagenes/p2-b.jpg" alt="Proyecto 2 imagen 2" loading="lazy">
+            <img src="imagenes/p2-c.jpg" alt="Proyecto 2 imagen 3" loading="lazy">
+          </div>
+          <button class="carousel-btn prev" aria-label="Anterior">&#8592;</button>
+          <button class="carousel-btn next" aria-label="Siguiente">&#8594;</button>
+          <div class="carousel-dots">
+            <span class="dot active"></span><span class="dot"></span><span class="dot"></span>
+          </div>
+        </div>
+        <div class="proj-card-info">
+          <p class="proj-cat">Patrimonio</p>
+          <p class="proj-name">Proyecto 2</p>
+        </div>
+      </div>
+
+      <!-- PROYECTO 3 -->
+      <div class="proj-card">
+        <div class="proj-carousel" data-index="0">
+          <div class="proj-carousel-track">
+            <img src="imagenes/p3-a.jpg" alt="Proyecto 3 imagen 1" loading="lazy">
+            <img src="imagenes/p3-b.jpg" alt="Proyecto 3 imagen 2" loading="lazy">
+            <img src="imagenes/p3-c.jpg" alt="Proyecto 3 imagen 3" loading="lazy">
+          </div>
+          <button class="carousel-btn prev" aria-label="Anterior">&#8592;</button>
+          <button class="carousel-btn next" aria-label="Siguiente">&#8594;</button>
+          <div class="carousel-dots">
+            <span class="dot active"></span><span class="dot"></span><span class="dot"></span>
+          </div>
+        </div>
+        <div class="proj-card-info">
+          <p class="proj-cat">Interiorismo</p>
+          <p class="proj-name">Proyecto 3</p>
+        </div>
+      </div>
+
+      <!-- PROYECTO 4 -->
+      <div class="proj-card">
+        <div class="proj-carousel" data-index="0">
+          <div class="proj-carousel-track">
+            <img src="imagenes/p4-a.jpg" alt="Proyecto 4 imagen 1" loading="lazy">
+            <img src="imagenes/p4-b.jpg" alt="Proyecto 4 imagen 2" loading="lazy">
+            <img src="imagenes/p4-c.jpg" alt="Proyecto 4 imagen 3" loading="lazy">
+          </div>
+          <button class="carousel-btn prev" aria-label="Anterior">&#8592;</button>
+          <button class="carousel-btn next" aria-label="Siguiente">&#8594;</button>
+          <div class="carousel-dots">
+            <span class="dot active"></span><span class="dot"></span><span class="dot"></span>
+          </div>
+        </div>
+        <div class="proj-card-info">
+          <p class="proj-cat">Rehabilitación</p>
+          <p class="proj-name">Proyecto 4</p>
+        </div>
+      </div>
+
+      <!-- PROYECTO 5 -->
+      <div class="proj-card">
+        <div class="proj-carousel" data-index="0">
+          <div class="proj-carousel-track">
+            <img src="imagenes/p5-a.jpg" alt="Proyecto 5 imagen 1" loading="lazy">
+            <img src="imagenes/p5-b.jpg" alt="Proyecto 5 imagen 2" loading="lazy">
+            <img src="imagenes/p5-c.jpg" alt="Proyecto 5 imagen 3" loading="lazy">
+          </div>
+          <button class="carousel-btn prev" aria-label="Anterior">&#8592;</button>
+          <button class="carousel-btn next" aria-label="Siguiente">&#8594;</button>
+          <div class="carousel-dots">
+            <span class="dot active"></span><span class="dot"></span><span class="dot"></span>
+          </div>
+        </div>
+        <div class="proj-card-info">
+          <p class="proj-cat">Ampliación</p>
+          <p class="proj-name">Proyecto 5</p>
+        </div>
+      </div>
+
+      <!-- PROYECTO 6 -->
+      <div class="proj-card">
+        <div class="proj-carousel" data-index="0">
+          <div class="proj-carousel-track">
+            <img src="imagenes/p6-a.jpg" alt="Proyecto 6 imagen 1" loading="lazy">
+            <img src="imagenes/p6-b.jpg" alt="Proyecto 6 imagen 2" loading="lazy">
+            <img src="imagenes/p6-c.jpg" alt="Proyecto 6 imagen 3" loading="lazy">
+          </div>
+          <button class="carousel-btn prev" aria-label="Anterior">&#8592;</button>
+          <button class="carousel-btn next" aria-label="Siguiente">&#8594;</button>
+          <div class="carousel-dots">
+            <span class="dot active"></span><span class="dot"></span><span class="dot"></span>
+          </div>
+        </div>
+        <div class="proj-card-info">
+          <p class="proj-cat">Comercial</p>
+          <p class="proj-name">Proyecto 6</p>
+        </div>
+      </div>
+
+      <!-- PROYECTO 7 -->
+      <div class="proj-card">
+        <div class="proj-carousel" data-index="0">
+          <div class="proj-carousel-track">
+            <img src="imagenes/p7-a.jpg" alt="Proyecto 7 imagen 1" loading="lazy">
+            <img src="imagenes/p7-b.jpg" alt="Proyecto 7 imagen 2" loading="lazy">
+            <img src="imagenes/p7-c.jpg" alt="Proyecto 7 imagen 3" loading="lazy">
+          </div>
+          <button class="carousel-btn prev" aria-label="Anterior">&#8592;</button>
+          <button class="carousel-btn next" aria-label="Siguiente">&#8594;</button>
+          <div class="carousel-dots">
+            <span class="dot active"></span><span class="dot"></span><span class="dot"></span>
+          </div>
+        </div>
+        <div class="proj-card-info">
+          <p class="proj-cat">Remodelación</p>
+          <p class="proj-name">Proyecto 7</p>
+        </div>
+      </div>
+
+      <!-- PROYECTO 8 -->
+      <div class="proj-card">
+        <div class="proj-carousel" data-index="0">
+          <div class="proj-carousel-track">
+            <img src="imagenes/p8-a.jpg" alt="Proyecto 8 imagen 1" loading="lazy">
+            <img src="imagenes/p8-b.jpg" alt="Proyecto 8 imagen 2" loading="lazy">
+            <img src="imagenes/p8-c.jpg" alt="Proyecto 8 imagen 3" loading="lazy">
+          </div>
+          <button class="carousel-btn prev" aria-label="Anterior">&#8592;</button>
+          <button class="carousel-btn next" aria-label="Siguiente">&#8594;</button>
+          <div class="carousel-dots">
+            <span class="dot active"></span><span class="dot"></span><span class="dot"></span>
+          </div>
+        </div>
+        <div class="proj-card-info">
+          <p class="proj-cat">Institucional</p>
+          <p class="proj-name">Proyecto 8</p>
+        </div>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- ══════════════════════════════
+       POR QUÉ ELEGIRNOS
+  ══════════════════════════════ -->
+  <section class="porque" id="porque">
+    <div class="porque-header">
+      <p class="section-eyebrow">Por qué elegirnos</p>
+    </div>
+
+    <div class="porque-grid">
+
+      <div class="porque-item">
+        <span class="porque-num">01</span>
+        <div>
+          <h3 class="porque-title">Diseñamos con propósito</h3>
+          <p class="porque-text">Creamos espacios que son una extensión de tu identidad y tu día a día. Ya sea para vivir, trabajar o proyectar tu futuro, diseñamos soluciones basadas en ideas potentes, sencillas y adaptadas a la normativa vigente.</p>
+        </div>
+      </div>
+
+      <div class="porque-item">
+        <span class="porque-num">02</span>
+        <div>
+          <h3 class="porque-title">Asesoría clara y honesta</h3>
+          <p class="porque-text">Nos importa escucharte. Te orientamos de manera simple sobre lo que realmente necesitas, trabajando con presupuestos abiertos y un compromiso total con el precio justo.</p>
+        </div>
+      </div>
+
+      <div class="porque-item">
+        <span class="porque-num">03</span>
+        <div>
+          <h3 class="porque-title">Calidad en lo que se ve y lo que no</h3>
+          <p class="porque-text">Cuidamos el detalle técnico y la estética por igual. Seleccionamos materiales adecuados que respetan el entorno y la naturaleza, garantizando una habitabilidad superior.</p>
+        </div>
+      </div>
+
+      <div class="porque-item">
+        <span class="porque-num">04</span>
+        <div>
+          <h3 class="porque-title">Proyectos a tu medida</h3>
+          <p class="porque-text">Ejecutamos la obra entregando espacios funcionales y únicos. Jugamos con tonos y acentos que responden a tu personalidad y al carácter de cada inmueble.</p>
+        </div>
+      </div>
+
+    </div>
+
+    <div class="porque-cierre">
+      <div class="quote-line"></div>
+      <p class="porque-cierre-text">En definitiva, construimos el escenario para la vida que quieres llevar.</p>
+    </div>
+  </section>
+
+  <!-- ══════════════════════════════
+       EQUIPO
+  ══════════════════════════════ -->
+  <section class="equipo" id="equipo">
+    <p class="section-eyebrow" style="margin-bottom:3rem">El equipo</p>
+
+    <div class="equipo-grid">
+
+      <!-- Arturo Steinberg — REEMPLAZAR foto -->
+      <div class="bio-card">
+        <div class="bio-foto">
+          <img src="imagenes/equipo-1.jpg" alt="Arturo Steinberg Acuña" loading="lazy" width="600" height="450">
+        </div>
+        <div class="bio-body">
+          <div class="bio-header">
+            <p class="bio-nombre">Arturo Steinberg Acuña</p>
+            <p class="bio-rol">Arquitecto / Socio</p>
+          </div>
+          <div class="bio-divider"></div>
+          <p class="bio-texto">
+            Arquitecto de la Universidad de Chile. Tiene especial interés en el diseño y construcción de obras de arquitectura, considerando la innovación y el detallamiento como parte esencial de su resolución. Tiene experiencia en el ámbito público y además privado en diversas oficinas, participando en proyectos de variadas envergaduras desde vivienda económica, hasta grandes centros deportivos y culturales, lo que le permite disponer de amplio conocimiento de una obra de arquitectura en todos sus ámbitos como el diseño, estructura, presupuesto, materialidad y logística en obra, entregando soluciones acordes a cada proyecto.
+          </p>
+          <div class="bio-tags">
+            <span>Diseño</span>
+            <span>Construcción</span>
+            <span>Patrimonio</span>
+          </div>
+          <a href="https://linkedin.com" target="_blank" rel="noopener" class="bio-linkedin">
+            <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+              <rect x="2" y="2" width="20" height="20" rx="4"/><path d="M8 11v5M8 8v.01M12 16v-5M12 13a2 2 0 0 1 4 0v3"/>
+            </svg>
+            Ver perfil
+          </a>
+        </div>
+      </div>
+
+      <!-- Mariela Leiva — REEMPLAZAR foto -->
+      <div class="bio-card">
+        <div class="bio-foto">
+          <img src="imagenes/equipo-2.jpg" alt="Mariela Leiva Silva" loading="lazy" width="600" height="450">
+        </div>
+        <div class="bio-body">
+          <div class="bio-header">
+            <p class="bio-nombre">Mariela Leiva Silva</p>
+            <p class="bio-rol">Arquitecta / Socia</p>
+          </div>
+          <div class="bio-divider"></div>
+          <p class="bio-texto">
+            Arquitecta de la Universidad de Chile. Tiene especial interés en la intervención e interiorismo de inmuebles existentes, con el fin de ponerlos en valor, conjugando los nuevos usos y necesidades de las personas, y la nueva vida que pueden abarcar. Tiene experiencia en el sector público, en formulación, diseño, inspección y asesoría de proyectos e iniciativas de arquitectura y patrimonio cultural. En el sector privado ha realizado diversos proyectos de diseño y obra, de mediana y pequeña escala, además de realizar investigaciones en patrimonio. Ha sido adjudicataria de Fondos como el FONPAT con el equipo de @patrimonioinmersivo.
+          </p>
+          <div class="bio-tags">
+            <span>Interiorismo</span>
+            <span>Patrimonio</span>
+            <span>Rehabilitación</span>
+          </div>
+          <a href="https://linkedin.com" target="_blank" rel="noopener" class="bio-linkedin">
+            <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+              <rect x="2" y="2" width="20" height="20" rx="4"/><path d="M8 11v5M8 8v.01M12 16v-5M12 13a2 2 0 0 1 4 0v3"/>
+            </svg>
+            Ver perfil
+          </a>
+        </div>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- ══════════════════════════════
+       CONTACTO
+  ══════════════════════════════ -->
+  <section class="contacto" id="contacto">
+    <div class="contacto-left">
+      <p class="section-eyebrow">Contacto</p>
+      <h2 class="c-title">Trabajemos juntos</h2>
+      <p class="c-sub">
+        Cuéntanos tu proyecto. Respondemos en menos de 24 horas hábiles.
+      </p>
+      <div class="c-meta">
+        <strong>Email</strong><br>
+        hola@steinbergleiva.cl<br><br>
+        <strong>Teléfono</strong><br>
+        +56 9 XXXX XXXX<br><br>
+        <strong>Oficina</strong><br>
+        Santiago, Chile
+      </div>
+    </div>
+
+    <div class="contacto-right">
+      <form novalidate>
+        <div class="field">
+          <label for="nombre">Nombre</label>
+          <input type="text" id="nombre" name="nombre" placeholder="Tu nombre completo" required>
+        </div>
+        <div class="field">
+          <label for="email">Email</label>
+          <input type="email" id="email" name="email" placeholder="tu@email.com" required>
+        </div>
+        <div class="field">
+          <label for="tipo">Tipo de proyecto</label>
+          <select id="tipo" name="tipo">
+            <option value="">Selecciona una opción</option>
+            <option value="residencial">Residencial</option>
+            <option value="comercial">Comercial</option>
+            <option value="institucional">Institucional</option>
+            <option value="otro">Otro</option>
+          </select>
+        </div>
+        <div class="field">
+          <label for="mensaje">Mensaje</label>
+          <textarea id="mensaje" name="mensaje" placeholder="Cuéntanos sobre tu proyecto…"></textarea>
+        </div>
+        <div style="display:flex;gap:1rem;flex-wrap:wrap">
+          <button type="submit" class="btn-send">Enviar mensaje →</button>
+          <a href="https://wa.me/56900000000" target="_blank" rel="noopener" class="btn-wa">
+            <svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor">
+              <path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/>
+            </svg>
+            WhatsApp
+          </a>
+        </div>
+      </form>
+    </div>
+  </section>
+
+  <!-- ══════════════════════════════
+       FOOTER
+  ══════════════════════════════ -->
+  <footer>
+    <div class="footer-logo">
+      <!-- REEMPLAZAR: logo versión clara (blanca o crema) -->
+      <img src="imagenes/logo-claro.svg" alt="Steinberg Leiva" width="100" height="44">
+    </div>
+    <p>© 2025 Steinberg Leiva Arquitectos · Santiago, Chile</p>
+  </footer>
+
+  <!-- Scripts externos -->
+  <script src="js/script.js" defer></script>
+
+</body>
+</html>
