@@ -126,7 +126,7 @@
   </section>
 
   <!-- ══════════════════════════════
-       PORTFOLIO — 8 proyectos con carrusel
+       PORTFOLIO — 11 proyectos con carrusel
   ══════════════════════════════ -->
   <section class="portfolio" id="portfolio">
     <div class="port-header">
@@ -134,166 +134,217 @@
       <a href="#contacto" class="btn-text">Contáctanos →</a>
     </div>
 
-    <div class="proj-cards-grid">
+    <div class="proj-masonry">
 
-      <!-- PROYECTO 1 -->
-      <div class="proj-card">
-        <div class="proj-carousel" data-index="0">
-          <div class="proj-carousel-track">
-            <img src="imagenes/p1-a.jpg" alt="Proyecto 1 imagen 1" loading="lazy">
-            <img src="imagenes/p1-b.jpg" alt="Proyecto 1 imagen 2" loading="lazy">
-            <img src="imagenes/p1-c.jpg" alt="Proyecto 1 imagen 3" loading="lazy">
+      <!-- FILA 1: grande + dos pequeños apilados -->
+      <div class="proj-row proj-row--a">
+
+        <!-- P1 — grande -->
+        <div class="proj-card proj-card--tall">
+          <div class="proj-carousel">
+            <div class="proj-carousel-track">
+              <img src="imagenes/p1-a.jpg" alt="Ampliación tercer nivel vivienda HA1" loading="lazy">
+              <img src="imagenes/p1-b.jpg" alt="Ampliación tercer nivel vivienda HA1" loading="lazy">
+              <img src="imagenes/p1-c.jpg" alt="Ampliación tercer nivel vivienda HA1" loading="lazy">
+            </div>
+            <button class="carousel-btn prev" aria-label="Anterior">&#8592;</button>
+            <button class="carousel-btn next" aria-label="Siguiente">&#8594;</button>
+            <div class="carousel-dots"><span class="dot active"></span><span class="dot"></span><span class="dot"></span></div>
           </div>
-          <button class="carousel-btn prev" aria-label="Anterior">&#8592;</button>
-          <button class="carousel-btn next" aria-label="Siguiente">&#8594;</button>
-          <div class="carousel-dots">
-            <span class="dot active"></span><span class="dot"></span><span class="dot"></span>
+          <div class="proj-card-info">
+            <p class="proj-cat">Diseño y obra</p>
+            <p class="proj-name">Ampliación tercer nivel vivienda en HA1</p>
           </div>
         </div>
-        <div class="proj-card-info">
-          <p class="proj-cat">Residencial</p>
-          <p class="proj-name">Proyecto 1</p>
+
+        <!-- Columna derecha: P2 + P3 apilados -->
+        <div class="proj-col">
+          <div class="proj-card">
+            <div class="proj-carousel">
+              <div class="proj-carousel-track">
+                <img src="imagenes/p2-a.jpg" alt="Cocina y baño O1" loading="lazy">
+                <img src="imagenes/p2-b.jpg" alt="Cocina y baño O1" loading="lazy">
+                <img src="imagenes/p2-c.jpg" alt="Cocina y baño O1" loading="lazy">
+              </div>
+              <button class="carousel-btn prev" aria-label="Anterior">&#8592;</button>
+              <button class="carousel-btn next" aria-label="Siguiente">&#8594;</button>
+              <div class="carousel-dots"><span class="dot active"></span><span class="dot"></span><span class="dot"></span></div>
+            </div>
+            <div class="proj-card-info">
+              <p class="proj-cat">Diseño y obra</p>
+              <p class="proj-name">Cocina y baño O1</p>
+            </div>
+          </div>
+
+          <div class="proj-card">
+            <div class="proj-carousel">
+              <div class="proj-carousel-track">
+                <img src="imagenes/p3-a.jpg" alt="Remodelación restaurant @dondelaberni" loading="lazy">
+                <img src="imagenes/p3-b.jpg" alt="Remodelación restaurant @dondelaberni" loading="lazy">
+                <img src="imagenes/p3-c.jpg" alt="Remodelación restaurant @dondelaberni" loading="lazy">
+              </div>
+              <button class="carousel-btn prev" aria-label="Anterior">&#8592;</button>
+              <button class="carousel-btn next" aria-label="Siguiente">&#8594;</button>
+              <div class="carousel-dots"><span class="dot active"></span><span class="dot"></span><span class="dot"></span></div>
+            </div>
+            <div class="proj-card-info">
+              <p class="proj-cat">Interiorismo</p>
+              <p class="proj-name">Remodelación restaurant @dondelaberni</p>
+            </div>
+          </div>
         </div>
+
       </div>
 
-      <!-- PROYECTO 2 -->
-      <div class="proj-card">
-        <div class="proj-carousel" data-index="0">
-          <div class="proj-carousel-track">
-            <img src="imagenes/p2-a.jpg" alt="Proyecto 2 imagen 1" loading="lazy">
-            <img src="imagenes/p2-b.jpg" alt="Proyecto 2 imagen 2" loading="lazy">
-            <img src="imagenes/p2-c.jpg" alt="Proyecto 2 imagen 3" loading="lazy">
+      <!-- FILA 2: tres iguales -->
+      <div class="proj-row proj-row--b">
+
+        <div class="proj-card">
+          <div class="proj-carousel">
+            <div class="proj-carousel-track">
+              <img src="imagenes/p4-a.jpg" alt="Oficina y escalera, Facultad de Arquitectura 1" loading="lazy">
+              <img src="imagenes/p4-b.jpg" alt="Oficina y escalera, Facultad de Arquitectura 1" loading="lazy">
+              <img src="imagenes/p4-c.jpg" alt="Oficina y escalera, Facultad de Arquitectura 1" loading="lazy">
+            </div>
+            <button class="carousel-btn prev" aria-label="Anterior">&#8592;</button>
+            <button class="carousel-btn next" aria-label="Siguiente">&#8594;</button>
+            <div class="carousel-dots"><span class="dot active"></span><span class="dot"></span><span class="dot"></span></div>
           </div>
-          <button class="carousel-btn prev" aria-label="Anterior">&#8592;</button>
-          <button class="carousel-btn next" aria-label="Siguiente">&#8594;</button>
-          <div class="carousel-dots">
-            <span class="dot active"></span><span class="dot"></span><span class="dot"></span>
+          <div class="proj-card-info">
+            <p class="proj-cat">Diseño y obra</p>
+            <p class="proj-name">Oficina y escalera, Facultad de Arquitectura 1</p>
           </div>
         </div>
-        <div class="proj-card-info">
-          <p class="proj-cat">Patrimonio</p>
-          <p class="proj-name">Proyecto 2</p>
+
+        <div class="proj-card">
+          <div class="proj-carousel">
+            <div class="proj-carousel-track">
+              <img src="imagenes/p5-a.jpg" alt="Oficina Abogados de DDHH" loading="lazy">
+              <img src="imagenes/p5-b.jpg" alt="Oficina Abogados de DDHH" loading="lazy">
+              <img src="imagenes/p5-c.jpg" alt="Oficina Abogados de DDHH" loading="lazy">
+            </div>
+            <button class="carousel-btn prev" aria-label="Anterior">&#8592;</button>
+            <button class="carousel-btn next" aria-label="Siguiente">&#8594;</button>
+            <div class="carousel-dots"><span class="dot active"></span><span class="dot"></span><span class="dot"></span></div>
+          </div>
+          <div class="proj-card-info">
+            <p class="proj-cat">Interiorismo</p>
+            <p class="proj-name">Oficina Abogados de DDHH</p>
+          </div>
         </div>
+
+        <div class="proj-card">
+          <div class="proj-carousel">
+            <div class="proj-carousel-track">
+              <img src="imagenes/p6-a.jpg" alt="Vivienda en HA2" loading="lazy">
+              <img src="imagenes/p6-b.jpg" alt="Vivienda en HA2" loading="lazy">
+              <img src="imagenes/p6-c.jpg" alt="Vivienda en HA2" loading="lazy">
+            </div>
+            <button class="carousel-btn prev" aria-label="Anterior">&#8592;</button>
+            <button class="carousel-btn next" aria-label="Siguiente">&#8594;</button>
+            <div class="carousel-dots"><span class="dot active"></span><span class="dot"></span><span class="dot"></span></div>
+          </div>
+          <div class="proj-card-info">
+            <p class="proj-cat">Interiorismo</p>
+            <p class="proj-name">Vivienda en HA2</p>
+          </div>
+        </div>
+
       </div>
 
-      <!-- PROYECTO 3 -->
-      <div class="proj-card">
-        <div class="proj-carousel" data-index="0">
-          <div class="proj-carousel-track">
-            <img src="imagenes/p3-a.jpg" alt="Proyecto 3 imagen 1" loading="lazy">
-            <img src="imagenes/p3-b.jpg" alt="Proyecto 3 imagen 2" loading="lazy">
-            <img src="imagenes/p3-c.jpg" alt="Proyecto 3 imagen 3" loading="lazy">
+      <!-- FILA 3: pequeño + grande -->
+      <div class="proj-row proj-row--c">
+
+        <div class="proj-card">
+          <div class="proj-carousel">
+            <div class="proj-carousel-track">
+              <img src="imagenes/p7-a.jpg" alt="Baños E1" loading="lazy">
+              <img src="imagenes/p7-b.jpg" alt="Baños E1" loading="lazy">
+              <img src="imagenes/p7-c.jpg" alt="Baños E1" loading="lazy">
+            </div>
+            <button class="carousel-btn prev" aria-label="Anterior">&#8592;</button>
+            <button class="carousel-btn next" aria-label="Siguiente">&#8594;</button>
+            <div class="carousel-dots"><span class="dot active"></span><span class="dot"></span><span class="dot"></span></div>
           </div>
-          <button class="carousel-btn prev" aria-label="Anterior">&#8592;</button>
-          <button class="carousel-btn next" aria-label="Siguiente">&#8594;</button>
-          <div class="carousel-dots">
-            <span class="dot active"></span><span class="dot"></span><span class="dot"></span>
+          <div class="proj-card-info">
+            <p class="proj-cat">Diseño y obra</p>
+            <p class="proj-name">Baños E1</p>
           </div>
         </div>
-        <div class="proj-card-info">
-          <p class="proj-cat">Interiorismo</p>
-          <p class="proj-name">Proyecto 3</p>
+
+        <div class="proj-card proj-card--wide">
+          <div class="proj-carousel">
+            <div class="proj-carousel-track">
+              <img src="imagenes/p8-a.jpg" alt="Puente, galería y hall. Facultad de Arquitectura 1" loading="lazy">
+              <img src="imagenes/p8-b.jpg" alt="Puente, galería y hall. Facultad de Arquitectura 1" loading="lazy">
+              <img src="imagenes/p8-c.jpg" alt="Puente, galería y hall. Facultad de Arquitectura 1" loading="lazy">
+            </div>
+            <button class="carousel-btn prev" aria-label="Anterior">&#8592;</button>
+            <button class="carousel-btn next" aria-label="Siguiente">&#8594;</button>
+            <div class="carousel-dots"><span class="dot active"></span><span class="dot"></span><span class="dot"></span></div>
+          </div>
+          <div class="proj-card-info">
+            <p class="proj-cat">Diseño y obra</p>
+            <p class="proj-name">Puente, galería y hall. Facultad de Arquitectura 1</p>
+          </div>
         </div>
+
       </div>
 
-      <!-- PROYECTO 4 -->
-      <div class="proj-card">
-        <div class="proj-carousel" data-index="0">
-          <div class="proj-carousel-track">
-            <img src="imagenes/p4-a.jpg" alt="Proyecto 4 imagen 1" loading="lazy">
-            <img src="imagenes/p4-b.jpg" alt="Proyecto 4 imagen 2" loading="lazy">
-            <img src="imagenes/p4-c.jpg" alt="Proyecto 4 imagen 3" loading="lazy">
-          </div>
-          <button class="carousel-btn prev" aria-label="Anterior">&#8592;</button>
-          <button class="carousel-btn next" aria-label="Siguiente">&#8594;</button>
-          <div class="carousel-dots">
-            <span class="dot active"></span><span class="dot"></span><span class="dot"></span>
-          </div>
-        </div>
-        <div class="proj-card-info">
-          <p class="proj-cat">Rehabilitación</p>
-          <p class="proj-name">Proyecto 4</p>
-        </div>
-      </div>
+      <!-- FILA 4: cuatro pequeños -->
+      <div class="proj-row proj-row--d">
 
-      <!-- PROYECTO 5 -->
-      <div class="proj-card">
-        <div class="proj-carousel" data-index="0">
-          <div class="proj-carousel-track">
-            <img src="imagenes/p5-a.jpg" alt="Proyecto 5 imagen 1" loading="lazy">
-            <img src="imagenes/p5-b.jpg" alt="Proyecto 5 imagen 2" loading="lazy">
-            <img src="imagenes/p5-c.jpg" alt="Proyecto 5 imagen 3" loading="lazy">
+        <div class="proj-card">
+          <div class="proj-carousel">
+            <div class="proj-carousel-track">
+              <img src="imagenes/p9-a.jpg" alt="Baño y ducha exterior G1" loading="lazy">
+              <img src="imagenes/p9-b.jpg" alt="Baño y ducha exterior G1" loading="lazy">
+              <img src="imagenes/p9-c.jpg" alt="Baño y ducha exterior G1" loading="lazy">
+            </div>
+            <button class="carousel-btn prev" aria-label="Anterior">&#8592;</button>
+            <button class="carousel-btn next" aria-label="Siguiente">&#8594;</button>
+            <div class="carousel-dots"><span class="dot active"></span><span class="dot"></span><span class="dot"></span></div>
           </div>
-          <button class="carousel-btn prev" aria-label="Anterior">&#8592;</button>
-          <button class="carousel-btn next" aria-label="Siguiente">&#8594;</button>
-          <div class="carousel-dots">
-            <span class="dot active"></span><span class="dot"></span><span class="dot"></span>
+          <div class="proj-card-info">
+            <p class="proj-cat">Diseño y obra</p>
+            <p class="proj-name">Baño y ducha exterior G1</p>
           </div>
         </div>
-        <div class="proj-card-info">
-          <p class="proj-cat">Ampliación</p>
-          <p class="proj-name">Proyecto 5</p>
-        </div>
-      </div>
 
-      <!-- PROYECTO 6 -->
-      <div class="proj-card">
-        <div class="proj-carousel" data-index="0">
-          <div class="proj-carousel-track">
-            <img src="imagenes/p6-a.jpg" alt="Proyecto 6 imagen 1" loading="lazy">
-            <img src="imagenes/p6-b.jpg" alt="Proyecto 6 imagen 2" loading="lazy">
-            <img src="imagenes/p6-c.jpg" alt="Proyecto 6 imagen 3" loading="lazy">
+        <div class="proj-card">
+          <div class="proj-carousel">
+            <div class="proj-carousel-track">
+              <img src="imagenes/p10-a.jpg" alt="Ampliación y mobiliario vivienda en PG1" loading="lazy">
+              <img src="imagenes/p10-b.jpg" alt="Ampliación y mobiliario vivienda en PG1" loading="lazy">
+              <img src="imagenes/p10-c.jpg" alt="Ampliación y mobiliario vivienda en PG1" loading="lazy">
+            </div>
+            <button class="carousel-btn prev" aria-label="Anterior">&#8592;</button>
+            <button class="carousel-btn next" aria-label="Siguiente">&#8594;</button>
+            <div class="carousel-dots"><span class="dot active"></span><span class="dot"></span><span class="dot"></span></div>
           </div>
-          <button class="carousel-btn prev" aria-label="Anterior">&#8592;</button>
-          <button class="carousel-btn next" aria-label="Siguiente">&#8594;</button>
-          <div class="carousel-dots">
-            <span class="dot active"></span><span class="dot"></span><span class="dot"></span>
+          <div class="proj-card-info">
+            <p class="proj-cat">Diseño y obra</p>
+            <p class="proj-name">Ampliación y mobiliario vivienda en PG1</p>
           </div>
         </div>
-        <div class="proj-card-info">
-          <p class="proj-cat">Comercial</p>
-          <p class="proj-name">Proyecto 6</p>
-        </div>
-      </div>
 
-      <!-- PROYECTO 7 -->
-      <div class="proj-card">
-        <div class="proj-carousel" data-index="0">
-          <div class="proj-carousel-track">
-            <img src="imagenes/p7-a.jpg" alt="Proyecto 7 imagen 1" loading="lazy">
-            <img src="imagenes/p7-b.jpg" alt="Proyecto 7 imagen 2" loading="lazy">
-            <img src="imagenes/p7-c.jpg" alt="Proyecto 7 imagen 3" loading="lazy">
+        <div class="proj-card proj-card--wide2">
+          <div class="proj-carousel">
+            <div class="proj-carousel-track">
+              <img src="imagenes/p11-a.jpg" alt="Cocina y mejoras LTO1" loading="lazy">
+              <img src="imagenes/p11-b.jpg" alt="Cocina y mejoras LTO1" loading="lazy">
+              <img src="imagenes/p11-c.jpg" alt="Cocina y mejoras LTO1" loading="lazy">
+            </div>
+            <button class="carousel-btn prev" aria-label="Anterior">&#8592;</button>
+            <button class="carousel-btn next" aria-label="Siguiente">&#8594;</button>
+            <div class="carousel-dots"><span class="dot active"></span><span class="dot"></span><span class="dot"></span></div>
           </div>
-          <button class="carousel-btn prev" aria-label="Anterior">&#8592;</button>
-          <button class="carousel-btn next" aria-label="Siguiente">&#8594;</button>
-          <div class="carousel-dots">
-            <span class="dot active"></span><span class="dot"></span><span class="dot"></span>
+          <div class="proj-card-info">
+            <p class="proj-cat">Diseño y obra</p>
+            <p class="proj-name">Cocina y mejoras LTO1</p>
           </div>
         </div>
-        <div class="proj-card-info">
-          <p class="proj-cat">Remodelación</p>
-          <p class="proj-name">Proyecto 7</p>
-        </div>
-      </div>
 
-      <!-- PROYECTO 8 -->
-      <div class="proj-card">
-        <div class="proj-carousel" data-index="0">
-          <div class="proj-carousel-track">
-            <img src="imagenes/p8-a.jpg" alt="Proyecto 8 imagen 1" loading="lazy">
-            <img src="imagenes/p8-b.jpg" alt="Proyecto 8 imagen 2" loading="lazy">
-            <img src="imagenes/p8-c.jpg" alt="Proyecto 8 imagen 3" loading="lazy">
-          </div>
-          <button class="carousel-btn prev" aria-label="Anterior">&#8592;</button>
-          <button class="carousel-btn next" aria-label="Siguiente">&#8594;</button>
-          <div class="carousel-dots">
-            <span class="dot active"></span><span class="dot"></span><span class="dot"></span>
-          </div>
-        </div>
-        <div class="proj-card-info">
-          <p class="proj-cat">Institucional</p>
-          <p class="proj-name">Proyecto 8</p>
-        </div>
       </div>
 
     </div>
@@ -307,45 +358,49 @@
       <p class="section-eyebrow">Por qué elegirnos</p>
     </div>
 
-    <div class="porque-grid">
+    <p class="porque-intro">
+      <strong>Diseñamos el escenario de tu vida:</strong> Creemos que tu casa o oficina es tu marca personal en el mundo. Por eso, nuestra forma de trabajar se basa en tres pilares:
+    </p>
 
-      <div class="porque-item">
-        <span class="porque-num">01</span>
-        <div>
-          <h3 class="porque-title">Diseñamos con propósito</h3>
-          <p class="porque-text">Creamos espacios que son una extensión de tu identidad y tu día a día. Ya sea para vivir, trabajar o proyectar tu futuro, diseñamos soluciones basadas en ideas potentes, sencillas y adaptadas a la normativa vigente.</p>
+    <div class="porque-tabla">
+
+      <div class="porque-fila">
+        <div class="porque-fila-titulo">
+          <h3>Diagnóstico en base a la escucha y observación</h3>
+        </div>
+        <div class="porque-fila-texto">
+          <p>Te asesoramos y traducimos lo que necesitas en soluciones arquitectónicas sencillas y potentes. Proponemos soluciones adaptando los espacios a tu identidad y a la esencia del inmueble.</p>
         </div>
       </div>
 
-      <div class="porque-item">
-        <span class="porque-num">02</span>
-        <div>
-          <h3 class="porque-title">Asesoría clara y honesta</h3>
-          <p class="porque-text">Nos importa escucharte. Te orientamos de manera simple sobre lo que realmente necesitas, trabajando con presupuestos abiertos y un compromiso total con el precio justo.</p>
+      <div class="porque-fila">
+        <div class="porque-fila-titulo">
+          <h3>Calidad en lo que ves (y en lo que no)</h3>
+        </div>
+        <div class="porque-fila-texto">
+          <p>Diseñamos espacios modernos y flexibles para habitar la vida que quieres llevar. Nuestra ejecución respeta la normativa y el uso de materiales adecuados. Cuidando la estética y la habitabilidad técnica y el entorno.</p>
         </div>
       </div>
 
-      <div class="porque-item">
-        <span class="porque-num">03</span>
-        <div>
-          <h3 class="porque-title">Calidad en lo que se ve y lo que no</h3>
-          <p class="porque-text">Cuidamos el detalle técnico y la estética por igual. Seleccionamos materiales adecuados que respetan el entorno y la naturaleza, garantizando una habitabilidad superior.</p>
+      <div class="porque-fila">
+        <div class="porque-fila-titulo">
+          <h3>Gestión transparente y precio justo</h3>
         </div>
-      </div>
-
-      <div class="porque-item">
-        <span class="porque-num">04</span>
-        <div>
-          <h3 class="porque-title">Proyectos a tu medida</h3>
-          <p class="porque-text">Ejecutamos la obra entregando espacios funcionales y únicos. Jugamos con tonos y acentos que responden a tu personalidad y al carácter de cada inmueble.</p>
+        <div class="porque-fila-texto">
+          <p>La confianza, es nuestro material de construcción más importante. Trabajamos con un modelo de presupuesto abierto, asegurando que tu inversión se transforme en valor real.</p>
         </div>
       </div>
 
     </div>
 
     <div class="porque-cierre">
-      <div class="quote-line"></div>
-      <p class="porque-cierre-text">En definitiva, construimos el escenario para la vida que quieres llevar.</p>
+      <p class="porque-cierre-label">Nuestra promesa</p>
+      <p class="porque-cierre-text">
+        Te entregamos un espacio<br>
+        <em>a medida, funcional</em><br>
+        y listo para ser vivido.
+      </p>
+      <span class="porque-cierre-firma">Con la seguridad de una promesa cumplida.</span>
     </div>
   </section>
 
@@ -372,9 +427,10 @@
             Arquitecto de la Universidad de Chile. Tiene especial interés en el diseño y construcción de obras de arquitectura, considerando la innovación y el detallamiento como parte esencial de su resolución. Tiene experiencia en el ámbito público y además privado en diversas oficinas, participando en proyectos de variadas envergaduras desde vivienda económica, hasta grandes centros deportivos y culturales, lo que le permite disponer de amplio conocimiento de una obra de arquitectura en todos sus ámbitos como el diseño, estructura, presupuesto, materialidad y logística en obra, entregando soluciones acordes a cada proyecto.
           </p>
           <div class="bio-tags">
-            <span>Diseño</span>
+            <span>Arquitectura</span>
+            <span>Reforma</span>
+            <span>Detallamiento</span>
             <span>Construcción</span>
-            <span>Patrimonio</span>
           </div>
           <a href="https://linkedin.com" target="_blank" rel="noopener" class="bio-linkedin">
             <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
@@ -400,9 +456,10 @@
             Arquitecta de la Universidad de Chile. Tiene especial interés en la intervención e interiorismo de inmuebles existentes, con el fin de ponerlos en valor, conjugando los nuevos usos y necesidades de las personas, y la nueva vida que pueden abarcar. Tiene experiencia en el sector público, en formulación, diseño, inspección y asesoría de proyectos e iniciativas de arquitectura y patrimonio cultural. En el sector privado ha realizado diversos proyectos de diseño y obra, de mediana y pequeña escala, además de realizar investigaciones en patrimonio. Ha sido adjudicataria de Fondos como el FONPAT con el equipo de @patrimonioinmersivo.
           </p>
           <div class="bio-tags">
-            <span>Interiorismo</span>
-            <span>Patrimonio</span>
+            <span>Arquitectura</span>
+            <span>Reforma</span>
             <span>Rehabilitación</span>
+            <span>Interiorismo</span>
           </div>
           <a href="https://linkedin.com" target="_blank" rel="noopener" class="bio-linkedin">
             <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">

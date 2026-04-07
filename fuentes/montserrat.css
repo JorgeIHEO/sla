@@ -2,23 +2,26 @@
    STEINBERG LEIVA — Fuente Montserrat
    fuentes/montserrat.css
 
-   Opción A (recomendada): Google Fonts CDN
-   Descomenta el @import de abajo y borra los @font-face
-   si prefieres cargar la fuente desde Google (requiere internet).
+   Carga LOCAL (activa por defecto).
+   Descarga los archivos .woff2 y colócalos
+   en esta misma carpeta fuentes/.
 
-   Opción B: Autohospedada
-   Descarga los archivos .woff2 de fontsource.org y colócalos
-   en esta carpeta fuentes/. Luego usa los @font-face de abajo.
+   Pesos usados en el sitio:
+     200 — extralight  (hero-title, c-title)
+     300 — light       (cuerpo, subtítulos)
+     400 — regular     (proj-name, nav-cta base)
+     500 — medium      (eyebrows, labels)
+     600 — semibold    (tags, btns, títulos secundarios)
+
+   Descarga gratuita en:
+   https://fonts.google.com/specimen/Montserrat
+   → "Download family" → extrae los TTF
+   → convierte a .woff2 en https://cloudconvert.com/ttf-to-woff2
+   o descarga directamente los .woff2 desde:
+   https://fontsource.org/fonts/montserrat
 ═══════════════════════════════════════ */
 
-/* ── OPCIÓN A: Google Fonts (CDN) ── */
-@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@200;300;400;600&display=swap');
-
-
-/* ── OPCIÓN B: Autohospedada (descomenta si usas archivos locales) ──
-   Coloca montserrat-200.woff2, montserrat-300.woff2,
-   montserrat-400.woff2, montserrat-600.woff2 en esta carpeta.
-
+/* ── CARGA LOCAL (activa) ── */
 @font-face {
   font-family: 'Montserrat';
   src: url('montserrat-200.woff2') format('woff2');
@@ -42,9 +45,20 @@
 }
 @font-face {
   font-family: 'Montserrat';
+  src: url('montserrat-500.woff2') format('woff2');
+  font-weight: 500;
+  font-style: normal;
+  font-display: swap;
+}
+@font-face {
+  font-family: 'Montserrat';
   src: url('montserrat-600.woff2') format('woff2');
   font-weight: 600;
   font-style: normal;
   font-display: swap;
 }
+
+
+/* ── FALLBACK CDN — descomenta solo si no tienes los archivos .woff2 ──
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@200;300;400;500;600&display=swap');
 */
