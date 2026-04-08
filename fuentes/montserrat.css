@@ -1,27 +1,52 @@
 /* ═══════════════════════════════════════
    STEINBERG LEIVA — Fuente Montserrat
    fuentes/montserrat.css
+═══════════════════════════════════════
 
-   Carga LOCAL (activa por defecto).
-   Descarga los archivos .woff2 y colócalos
-   en esta misma carpeta fuentes/.
+   INSTRUCCIONES — elige UNA opción:
 
-   Pesos usados en el sitio:
-     200 — extralight  (hero-title, c-title)
-     300 — light       (cuerpo, subtítulos)
-     400 — regular     (proj-name, nav-cta base)
-     500 — medium      (eyebrows, labels)
-     600 — semibold    (tags, btns, títulos secundarios)
+   ── OPCIÓN A: Variable Font (recomendada) ──
+   Un solo archivo cubre todos los pesos (200–600).
+   Descarga desde:
+   https://marier.design/play/montserrat-variable
+   → botón "Download Montserrat VF"
+   Renombra el archivo a: montserrat-variable.woff2
+   Colócalo en esta carpeta fuentes/.
+   Descomenta el bloque OPCIÓN A y comenta OPCIÓN B y C.
 
-   Descarga gratuita en:
-   https://fonts.google.com/specimen/Montserrat
-   → "Download family" → extrae los TTF
-   → convierte a .woff2 en https://cloudconvert.com/ttf-to-woff2
-   o descarga directamente los .woff2 desde:
-   https://fontsource.org/fonts/montserrat
+   ── OPCIÓN B: Archivos individuales ──
+   Descarga desde:
+   https://github.com/JulietaUla/Montserrat/tree/master/fonts/webfonts
+   Archivos necesarios (renombrar así):
+     Montserrat-ExtraLight.woff2 → montserrat-200.woff2
+     Montserrat-Light.woff2      → montserrat-300.woff2
+     Montserrat-Regular.woff2    → montserrat-400.woff2
+     Montserrat-Medium.woff2     → montserrat-500.woff2
+     Montserrat-SemiBold.woff2   → montserrat-600.woff2
+   Descomenta el bloque OPCIÓN B y comenta A y C.
+
+   ── OPCIÓN C: Google Fonts CDN (activa por defecto) ──
+   Requiere conexión a internet.
+   Funciona de inmediato sin descargar nada.
 ═══════════════════════════════════════ */
 
-/* ── CARGA LOCAL (activa) ── */
+
+/* ── OPCIÓN A: Variable Font (descomenta si tienes el archivo) ──
+
+@font-face {
+  font-family: 'Montserrat';
+  src: url('montserrat-variable.woff2') format('woff2 supports variations'),
+       url('montserrat-variable.woff2') format('woff2');
+  font-weight: 100 900;
+  font-style: normal;
+  font-display: swap;
+}
+
+*/
+
+
+/* ── OPCIÓN B: Archivos individuales (descomenta si los tienes) ──
+
 @font-face {
   font-family: 'Montserrat';
   src: url('montserrat-200.woff2') format('woff2');
@@ -58,7 +83,8 @@
   font-display: swap;
 }
 
-
-/* ── FALLBACK CDN — descomenta solo si no tienes los archivos .woff2 ──
-@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@200;300;400;500;600&display=swap');
 */
+
+
+/* ── OPCIÓN C: Google Fonts CDN (activa — requiere internet) ── */
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@200;300;400;500;600&display=swap');
