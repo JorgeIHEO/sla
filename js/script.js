@@ -1,51 +1,14 @@
 /* ═══════════════════════════════════════
    STEINBERG LEIVA — Scripts
-   v2.0 | js/script.js
+   v4.0 | js/script.js
 ═══════════════════════════════════════ */
 
-// ── SHUFFLE PORTFOLIO ──────────────────
-// Recoge todas las proj-card del masonry,
-// las mezcla aleatoriamente y las redistribuye
-// en las filas manteniendo la estructura visual.
-(function shufflePortfolio(){
-  const masonry = document.querySelector('.proj-masonry');
-  if(!masonry) return;
-
-  // Recoger todas las cards de todas las filas
-  const allCards = Array.from(masonry.querySelectorAll('.proj-card'));
-  if(allCards.length < 2) return;
-
-  // Fisher-Yates shuffle
-  for(let i = allCards.length - 1; i > 0; i--){
-    const j = Math.floor(Math.random() * (i + 1));
-    [allCards[i], allCards[j]] = [allCards[j], allCards[i]];
-  }
-
-  // Obtener los contenedores directos de cada card
-  // (pueden ser .proj-row o .proj-col dentro de .proj-row--a)
-  // Recoger los "slots" en orden DOM
-  const slots = [];
-  masonry.querySelectorAll('.proj-row').forEach(row => {
-    row.querySelectorAll(':scope > .proj-card').forEach(c => slots.push(c));
-    const col = row.querySelector('.proj-col');
-    if(col) col.querySelectorAll(':scope > .proj-card').forEach(c => slots.push(c));
-  });
-
-  // Reinsertar cada card mezclada en su slot correspondiente
-  slots.forEach((slot, i) => {
-    const shuffled = allCards[i];
-    if(!shuffled || slot === shuffled) return;
-    slot.replaceWith(shuffled);
-  });
-})();
-
-
-// ── CARRUSELES ────────────────────────
+// ── CARRUSELES ────────────────────────────────────────────────────
 document.querySelectorAll('.proj-carousel').forEach(carousel => {
   const track = carousel.querySelector('.proj-carousel-track');
   const dots  = carousel.querySelectorAll('.dot');
   const total = track ? track.querySelectorAll('img').length : 0;
-  if(total < 2) return; // imagen única: sin controles
+  if(total < 2) return;
 
   let current = 0;
 
@@ -61,7 +24,6 @@ document.querySelectorAll('.proj-carousel').forEach(carousel => {
   if(btnPrev) btnPrev.addEventListener('click', () => goTo(current - 1));
   dots.forEach((dot, i) => dot.addEventListener('click', () => goTo(i)));
 
-  // Swipe táctil
   let startX = 0;
   track.addEventListener('touchstart', e => { startX = e.touches[0].clientX; }, {passive:true});
   track.addEventListener('touchend', e => {
@@ -71,7 +33,7 @@ document.querySelectorAll('.proj-carousel').forEach(carousel => {
 });
 
 
-// ── SMOOTH SCROLL ─────────────────────
+// ── SMOOTH SCROLL ─────────────────────────────────────────────────
 document.querySelectorAll('a[href^="#"]').forEach(anchor => {
   anchor.addEventListener('click', function(e){
     e.preventDefault();
@@ -81,16 +43,16 @@ document.querySelectorAll('a[href^="#"]').forEach(anchor => {
 });
 
 
-// ── INTERSECTION ANIMATIONS ───────────
+// ── INTERSECTION ANIMATIONS ───────────────────────────────────────
 const observer = new IntersectionObserver(entries => {
   entries.forEach(entry => {
     if(entry.isIntersecting) entry.target.classList.add('visible');
   });
-}, {threshold: 0.12});
-document.querySelectorAll('.pilar,.proj-card,.bio-card,.porque-item').forEach(el => observer.observe(el));
+}, {threshold: 0.1});
+document.querySelectorAll('.pilar,.proj-card,.bio-card').forEach(el => observer.observe(el));
 
 
-// ── NAV SCROLL ────────────────────────
+// ── NAV SCROLL ────────────────────────────────────────────────────
 window.addEventListener('scroll', () => {
   const nav = document.querySelector('nav');
   if(!nav) return;
@@ -101,7 +63,7 @@ window.addEventListener('scroll', () => {
 });
 
 
-// ── FORMULARIO ────────────────────────
+// ── FORMULARIO ────────────────────────────────────────────────────
 const form = document.querySelector('form');
 if(form){
   form.addEventListener('submit', e => {

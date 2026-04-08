@@ -64,7 +64,7 @@ nav{
    HERO
 ══════════════════════════════ */
 .hero{
-  min-height:100vh;display:grid;
+  min-height:60vh;display:grid;
   grid-template-columns:42% 58%;padding-top:82px;
 }
 .hero-left{
@@ -102,9 +102,19 @@ nav{
   transition:background 0.2s,gap 0.2s;
 }
 .btn-primary:hover{background:var(--dark);gap:1.4rem}
-.hero-right{position:relative;overflow:hidden;background:#2a2520}
+.hero-right{
+  position:relative;
+  overflow:hidden;
+  background:#2a2520;
+  display:flex;
+  align-items:center;
+  justify-content:center;
+}
 .hero-right img{
-  width:100%;height:100%;object-fit:cover;opacity:0.75;
+  width:100%;height:100%;
+  object-fit:cover;
+  object-position:center center;
+  opacity:0.75;
   transition:transform 8s ease;
 }
 .hero-right:hover img{transform:scale(1.04)}
@@ -201,49 +211,42 @@ nav{
 }
 .btn-text:hover{letter-spacing:0.3em;color:var(--dark);border-color:var(--dark)}
 
-/* ── Cards carrusel ── */
-.proj-masonry{display:flex;flex-direction:column;gap:3px}
-.proj-row{display:flex;gap:3px}
+/* ── Grid masonry fijo ── */
+.proj-masonry{
+  display:flex;
+  flex-direction:column;
+  gap:3px;
+}
+.proj-row{
+  display:flex;
+  gap:3px;
+}
 
-/* Fila A: grande izq (3fr) + columna apilada derecha (2fr) */
-.proj-row--a .proj-card--tall{flex:3}
-.proj-row--a .proj-col{flex:2;display:flex;flex-direction:column;gap:3px}
-.proj-row--a .proj-col .proj-card{flex:1}
-
-/* Fila B: 3 iguales */
-.proj-row--b .proj-card{flex:1}
-
-/* Fila C: 1 + 1 más ancho */
-.proj-row--c .proj-card{flex:1}
-.proj-row--c .proj-card--wide{flex:1.5}
-
-/* Fila D: 2 iguales + 1 más ancho */
-.proj-row--d .proj-card{flex:1}
-.proj-row--d .proj-card--wide2{flex:1.4}
-
-/* Card base */
+/* Card */
 .proj-card{
   position:relative;
   overflow:hidden;
+  background:#1c1a18;
+  flex:1;
 }
 
-/* Carrusel llena el card en ambas dimensiones */
+/* Carrusel: aspect-ratio garantiza altura siempre visible */
 .proj-carousel{
   position:relative;
   width:100%;
-  height:100%;
   overflow:hidden;
+  aspect-ratio:16/10;
+  background:#2a2520;
 }
 
-/* Track horizontal, altura 100% */
+/* Track y slides */
 .proj-carousel-track{
   display:flex;
+  width:100%;
   height:100%;
   transition:transform 0.45s ease;
   line-height:0;
 }
-
-/* Imagen: object-fit:cover cubre siempre sin dejar bordes oscuros */
 .proj-carousel-track img{
   min-width:100%;
   width:100%;
@@ -254,24 +257,7 @@ nav{
   opacity:1;
   transition:opacity 0.3s;
 }
-
-/* Filas sin stretch: la imagen define su alto con aspect-ratio */
-.proj-row--b .proj-carousel-track img,
-.proj-row--c .proj-carousel-track img,
-.proj-row--d .proj-carousel-track img{
-  aspect-ratio:16/10;
-  height:auto;
-}
-
-/* Fila A: el carousel ocupa todo el card (que tiene altura flex) */
-.proj-row--a .proj-card{min-height:260px}
-.proj-row--a .proj-card--tall{min-height:420px}
-.proj-row--a .proj-carousel{
-  position:absolute;top:0;left:0;right:0;bottom:0;
-}
-
 .proj-card:hover .proj-carousel-track img{opacity:0.72}
-
 
 /* Botones nav */
 .carousel-btn{
