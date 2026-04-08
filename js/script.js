@@ -63,6 +63,40 @@ window.addEventListener('scroll', () => {
 });
 
 
+// ── MENÚ HAMBURGUESA ──────────────────────────────────────────────
+const burger  = document.getElementById('navBurger');
+const navMenu = document.getElementById('navMenu');
+
+if(burger && navMenu){
+  burger.addEventListener('click', () => {
+    const isOpen = burger.classList.toggle('open');
+    navMenu.classList.toggle('open', isOpen);
+    burger.setAttribute('aria-expanded', isOpen);
+    navMenu.setAttribute('aria-hidden', !isOpen);
+  });
+
+  // Cerrar menú al hacer click en cualquier link interno
+  navMenu.querySelectorAll('a[href^="#"]').forEach(link => {
+    link.addEventListener('click', () => {
+      burger.classList.remove('open');
+      navMenu.classList.remove('open');
+      burger.setAttribute('aria-expanded', 'false');
+      navMenu.setAttribute('aria-hidden', 'true');
+    });
+  });
+
+  // Cerrar menú al hacer scroll
+  window.addEventListener('scroll', () => {
+    if(navMenu.classList.contains('open')){
+      burger.classList.remove('open');
+      navMenu.classList.remove('open');
+      burger.setAttribute('aria-expanded', 'false');
+      navMenu.setAttribute('aria-hidden', 'true');
+    }
+  }, {passive:true});
+}
+
+
 // ── FORMULARIO ────────────────────────────────────────────────────
 const form = document.querySelector('form');
 if(form){
