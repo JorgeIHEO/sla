@@ -46,7 +46,7 @@ nav{
   backdrop-filter:blur(12px);
   border-bottom:1px solid var(--border);
 }
-.nav-logo img{height:62px;width:auto;display:block}
+.nav-logo img{height:47px;width:auto;display:block}
 .nav-cta{
   font-size:0.65rem;font-weight:600;letter-spacing:0.22em;
   text-transform:uppercase;color:var(--cream);background:var(--terra);
@@ -64,7 +64,7 @@ nav{
    HERO
 ══════════════════════════════ */
 .hero{
-  min-height:75vh;display:grid;
+  min-height:90vh;display:grid;
   grid-template-columns:42% 58%;padding-top:82px;
 }
 .hero-left{
@@ -510,7 +510,7 @@ footer{
   flex-wrap:wrap;gap:1rem;
   border-top:2px solid var(--terra);
 }
-.footer-logo img{height:44px;width:auto;display:block;opacity:0.55}
+.footer-logo img{height:29px;width:auto;display:block;opacity:0.55}
 footer p{
   font-size:0.62rem;font-weight:300;letter-spacing:0.1em;
   color:rgba(240,238,233,0.22);
