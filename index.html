@@ -1,1695 +1,551 @@
 <!DOCTYPE html>
 <html lang="es">
 <head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>humanthink — Diseño Estratégico y Dirección de Arte Senior en Chile</title>
-<meta name="description" content="humanthink es una consultora creativa con más de 20 años de experiencia. Branding estratégico, dirección de arte senior y comunicación visual para pymes en Chile.">
-<meta name="robots" content="index, follow">
-<meta property="og:type" content="website">
-<meta property="og:title" content="humanthink — Diseño Estratégico. Dirección de Arte Senior.">
-<link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:ital,wght@0,200;0,300;0,400;0,500;0,600;0,700;0,800;1,300;1,400&display=swap" rel="stylesheet">
-<style>
-/* ═══════════════════════════════════════════
-   TOKENS & RESET
-═══════════════════════════════════════════ */
-:root {
-  --red:       #FF0000;
-  --red-soft:  rgba(255,0,0,.07);
-  --dark:      #0E0E1A;
-  --dark2:     #181826;
-  --dark3:     #22223A;
-  --light:     #F5F5F7;
-  --muted:     rgba(245,245,247,.50);
-  --muted2:    rgba(245,245,247,.28);
-  --border:    rgba(255,255,255,.07);
-  --border2:   rgba(255,255,255,.13);
-  --ease:      cubic-bezier(.25,.46,.45,.94);
-  --ease-out:  cubic-bezier(.16,1,.3,1);
-}
-*, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
-html { scroll-behavior: smooth; font-size: 16px; }
-body {
-  font-family: 'Plus Jakarta Sans', -apple-system, BlinkMacSystemFont, sans-serif;
-  font-weight: 300;
-  background: var(--dark);
-  color: var(--light);
-  overflow-x: hidden;
-  line-height: 1.6;
-  -webkit-font-smoothing: antialiased;
-}
-img { max-width: 100%; display: block; }
-a { text-decoration: none; color: inherit; }
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-/* ═══════════════════════════════════════════
-   FUENTES LOCALES
-═══════════════════════════════════════════ */
-@font-face { font-family:'Qurova'; src:url('fonts/Qurova-Light.ttf') format('truetype'); font-weight:300; font-display:swap; }
-@font-face { font-family:'Qurova'; src:url('fonts/Qurova-Regular.ttf') format('truetype'); font-weight:400; font-display:swap; }
-@font-face { font-family:'Qurova'; src:url('fonts/Qurova-Medium.ttf') format('truetype'); font-weight:500; font-display:swap; }
-@font-face { font-family:'Qurova'; src:url('fonts/Qurova-SemiBold.ttf') format('truetype'); font-weight:600; font-display:swap; }
-@font-face { font-family:'Qurova'; src:url('fonts/Qurova-Bold.ttf') format('truetype'); font-weight:700; font-display:swap; }
+  <!-- ── SEO básico ── -->
+  <title>Steinberg Leiva Arquitectos | Diseño y Construcción en Santiago, Chile</title>
+  <meta name="description" content="Estudio de arquitectura en Santiago. Diseño, remodelación, ampliación e interiorismo de viviendas y espacios comerciales. Más de 60 proyectos en RM y Valparaíso.">
+  <meta name="keywords" content="arquitectos Santiago, estudio arquitectura Chile, remodelación vivienda, ampliación casa, interiorismo Santiago, rehabilitación inmuebles, arquitectura RM, Steinberg Leiva">
+  <meta name="author" content="Steinberg Leiva Arquitectos">
+  <meta name="robots" content="index, follow">
+  <link rel="canonical" href="https://steinbergleiva.com/">
 
-/* ═══════════════════════════════════════════
-   NAV — estilo Apple: translúcido + blur
-═══════════════════════════════════════════ */
-nav#nav {
-  position: fixed; top: 0; left: 0; right: 0; z-index: 900;
-  height: 52px;
-  display: flex; align-items: center; justify-content: space-between;
-  padding: 0 clamp(1.5rem, 5vw, 3.5rem);
-  background: rgba(14,14,26,.72);
-  backdrop-filter: saturate(180%) blur(20px);
-  -webkit-backdrop-filter: saturate(180%) blur(20px);
-  border-bottom: 1px solid var(--border);
-}
-.nav-logo-horiz { height: 20px; width: auto; display: block; }
-.nav-logo-block  { height: 32px; width: auto; display: none; }
-.nav-links {
-  display: flex; gap: 2rem; list-style: none;
-  align-items: center;
-}
-.nav-links a {
-  font-family: 'Qurova', sans-serif;
-  font-size: .70rem; font-weight: 300;
-  letter-spacing: .16em; text-transform: uppercase;
-  color: rgba(245,245,247,.72);
-  transition: color .2s var(--ease);
-}
-.nav-links a:hover { color: #fff; font-weight: 600; }
-.nav-links .nav-ig { display: flex; align-items: center; }
-.nav-links .nav-ig svg { width: 15px; height: 15px; fill: rgba(245,245,247,.65); transition: fill .2s; }
-.nav-links .nav-ig:hover svg { fill: #fff; }
-.nav-cta {
-  font-size: .68rem; font-weight: 600;
-  letter-spacing: .08em; text-transform: uppercase;
-  padding: .42rem 1.1rem;
-  border: 1px solid rgba(255,0,0,.6);
-  color: var(--red);
-  transition: background .25s, color .25s, border-color .25s;
-  border-radius: 2px;
-}
-.nav-cta:hover { background: var(--red); color: #fff; border-color: var(--red); }
+  <!-- ── Open Graph / Redes Sociales ── -->
+  <meta property="og:type" content="website">
+  <meta property="og:url" content="https://steinbergleiva.com/">
+  <meta property="og:title" content="Steinberg Leiva Arquitectos | Santiago, Chile">
+  <meta property="og:description" content="Diseñamos y construimos espacios a medida. Remodelación, ampliación e interiorismo en Santiago y Valparaíso.">
+  <meta property="og:image" content="https://steinbergleiva.com/imagenes/hero.jpg">
+  <meta property="og:locale" content="es_CL">
+  <meta property="og:site_name" content="Steinberg Leiva Arquitectos">
 
-/* ═══════════════════════════════════════════
-   HERO
-═══════════════════════════════════════════ */
-.hero {
-  position: relative; width: 100%;
-  min-height: 100svh;
-  overflow: hidden; background: #070710;
-  display: flex; align-items: flex-end;
-}
-.hero-video-wrap {
-  position: absolute; inset: 0; z-index: 0;
-  overflow: hidden; pointer-events: none;
-}
-.hero-video-wrap iframe {
-  position: absolute; top: 50%; left: 50%;
-  width: 177.78vh; height: 56.25vw;
-  min-width: 100%; min-height: 100%;
-  transform: translate(-50%,-50%);
-  border: none; pointer-events: none;
-}
-/* Gradient overlay de precisión quirúrgica */
-.hero-overlay {
-  position: absolute; inset: 0; z-index: 1;
-  background:
-    linear-gradient(to right, rgba(7,7,16,.96) 0%, rgba(7,7,16,.60) 55%, rgba(7,7,16,.20) 100%),
-    linear-gradient(to top, rgba(7,7,16,.98) 0%, transparent 40%);
-}
-/* Grain sutil — profundidad visual como Apple */
-.hero-grain {
-  position: absolute; inset: 0; z-index: 2;
-  opacity: .025;
-  background-image: url("data:image/svg+xml,%3Csvg viewBox='0 0 256 256' xmlns='http://www.w3.org/2000/svg'%3E%3Cfilter id='n'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='.9' numOctaves='4' stitchTiles='stitch'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23n)' opacity='1'/%3E%3C/svg%3E");
-  background-repeat: repeat;
-  background-size: 128px 128px;
-  pointer-events: none;
-}
+  <!-- ── Twitter Card ── -->
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="Steinberg Leiva Arquitectos | Santiago, Chile">
+  <meta name="twitter:description" content="Diseñamos y construimos espacios a medida. Remodelación, ampliación e interiorismo en Santiago y Valparaíso.">
+  <meta name="twitter:image" content="https://steinbergleiva.com/imagenes/hero.jpg">
 
+  <!-- ── Schema.org Structured Data ── -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "ArchitectureFirm",
+    "name": "Steinberg Leiva Arquitectos",
+    "url": "https://steinbergleiva.com",
+    "email": "hola@steinbergleiva.com",
+    "description": "Estudio de arquitectura especializado en diseño, remodelación, ampliación e interiorismo en Santiago y Valparaíso, Chile.",
+    "address": {
+      "@type": "PostalAddress",
+      "addressLocality": "Santiago",
+      "addressCountry": "CL"
+    },
+    "foundingDate": "2019",
+    "sameAs": [
+      "https://www.instagram.com/steinberg.leiva/",
+      "https://www.linkedin.com/in/arturo-steinberg-11b13080/",
+      "https://www.linkedin.com/in/marielaleiva/"
+    ],
+    "employee": [
+      {
+        "@type": "Person",
+        "name": "Arturo Steinberg Acuña",
+        "jobTitle": "Arquitecto / Socio"
+      },
+      {
+        "@type": "Person",
+        "name": "Mariela Leiva Silva",
+        "jobTitle": "Arquitecta / Socia"
+      }
+    ]
+  }
+  </script>
 
-/* Contenido hero */
-.hero-content {
-  position: relative; z-index: 3;
-  width: 100%;
-  padding: 0 clamp(1.5rem, 6vw, 6rem) clamp(5rem, 10vh, 9rem);
-  display: flex; flex-direction: column;
-  align-items: flex-start;
-}
-.hero-eyebrow {
-  font-size: .60rem; font-weight: 600;
-  letter-spacing: .28em; text-transform: uppercase;
-  color: var(--red); margin-bottom: 1.4rem;
-  opacity: 0; animation: fadeUp .8s .2s var(--ease-out) forwards;
-}
-.hero-slides { width: 100%; max-width: 820px; }
-.slide-fade-wrap { opacity: 1; transition: opacity .55s var(--ease); }
+  <!-- ── Fuentes ── -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Montserrat:wght@100;200;300;500;600&display=swap">
 
-/* El titular: "__ vende" */
-.slide-h1-fixed {
-  font-family: 'Qurova', sans-serif;
-  font-weight: 300;
-  font-size: clamp(3.2rem, 7.5vw, 6.4rem);
-  line-height: 1.02;
-  color: var(--light);
-  letter-spacing: -.03em;
-  margin-bottom: 1.2rem;
-  opacity: 0; animation: fadeUp .9s .35s var(--ease-out) forwards;
-}
-.slide-vende { font-style: normal; color: var(--red); font-weight: 400; }
+  <!-- Iconos Material Symbols -->
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200&icon_names=system_update_alt" />
 
-.slide-sub {
-  font-family: 'Qurova', sans-serif;
-  font-size: clamp(.9rem, 1.8vw, 1.15rem);
-  font-weight: 300;
-  color: rgba(245,245,247,.60);
-  line-height: 1.65;
-  margin-bottom: .4rem;
-  opacity: 0; animation: fadeUp .9s .5s var(--ease-out) forwards;
-}
-.slide-ideal {
-  font-size: .58rem; font-weight: 300;
-  letter-spacing: .16em; text-transform: uppercase;
-  color: rgba(245,245,247,.22);
-  opacity: 0; animation: fadeUp .9s .6s var(--ease-out) forwards;
-}
-
-/* CTAs hero */
-.hero-cta-wrap {
-  display: flex; gap: 1rem; flex-wrap: wrap;
-  margin-top: 2.8rem;
-  opacity: 0; transition: opacity 1s var(--ease);
-}
-.btn-primary {
-  font-size: .72rem; font-weight: 600;
-  letter-spacing: .08em; text-transform: uppercase;
-  padding: .82rem 2rem;
-  background: var(--red); color: #fff;
-  border: 1px solid var(--red);
-  cursor: pointer; display: inline-flex; align-items: center; gap: .5rem;
-  transition: background .25s, transform .2s var(--ease-out), box-shadow .25s;
-  border-radius: 2px;
-}
-.btn-primary:hover { background: #e00; transform: translateY(-2px); box-shadow: 0 8px 28px rgba(255,0,0,.28); }
-.btn-outline {
-  font-size: .72rem; font-weight: 300;
-  letter-spacing: .08em; text-transform: uppercase;
-  padding: .82rem 2rem;
-  background: transparent; color: rgba(245,245,247,.75);
-  border: 1px solid var(--border2);
-  cursor: pointer; display: inline-block;
-  transition: border-color .25s, color .25s, transform .2s var(--ease-out);
-  border-radius: 2px;
-}
-.btn-outline:hover { border-color: rgba(245,245,247,.45); color: #fff; transform: translateY(-2px); }
-
-/* Scroll hint */
-.hero-scroll {
-  position: absolute; bottom: 2.2rem; left: 50%; transform: translateX(-50%);
-  z-index: 4; display: flex; flex-direction: column; align-items: center; gap: .4rem;
-  font-size: .52rem; letter-spacing: .22em; text-transform: uppercase;
-  color: rgba(245,245,247,.18);
-  animation: bounce 2.8s infinite var(--ease);
-}
-.hero-scroll::after {
-  content: '';
-  display: block; width: 1px; height: 28px;
-  background: linear-gradient(to bottom, rgba(255,0,0,.5), transparent);
-}
-
-/* Barra de progreso */
-.hero-progress {
-  position: absolute; bottom: 0; left: 0; right: 0; z-index: 4;
-  height: 1.5px; background: rgba(255,255,255,.04);
-}
-.hero-progress-bar { height: 100%; width: 0%; background: var(--red); }
-
-/* ═══════════════════════════════════════════
-   SEPARADORES
-═══════════════════════════════════════════ */
-.divider {
-  width: 100%; height: 1px;
-  background: linear-gradient(90deg, transparent, rgba(255,0,0,.35) 30%, rgba(255,0,0,.35) 70%, transparent);
-}
-
-/* ═══════════════════════════════════════════
-   TIPOGRAFÍA DE SECCIÓN — estilo Apple
-═══════════════════════════════════════════ */
-.section-wrap { padding: clamp(5rem,10vw,9rem) clamp(1.5rem,6vw,6rem); }
-.section-inner { max-width: 1100px; margin: 0 auto; }
-.section-eyebrow {
-  display: block;
-  font-size: .58rem; font-weight: 600;
-  letter-spacing: .28em; text-transform: uppercase;
-  color: var(--red); margin-bottom: 1rem;
-}
-.section-h2 {
-  font-family: 'Qurova', sans-serif; font-weight: 300;
-  font-size: clamp(2.2rem, 4.5vw, 3.8rem);
-  line-height: 1.08; letter-spacing: -.025em;
-  color: var(--light); margin-bottom: 1rem;
-}
-.section-h2 em { font-style: normal; color: var(--red); }
-.section-lead {
-  font-weight: 300; font-size: clamp(.90rem,1.7vw,1.1rem);
-  color: var(--muted); line-height: 1.8;
-  max-width: 540px; margin-bottom: 3.5rem;
-}
-
-/* ═══════════════════════════════════════════
-   SECCIÓN PROBLEMA
-═══════════════════════════════════════════ */
-.problem-section { background: var(--dark2); }
-
-.problems-grid {
-  display: grid;
-  grid-template-columns: repeat(3, 1fr);
-  gap: 1px; background: var(--border);
-}
-.problem-item {
-  background: var(--dark2);
-  padding: 2.2rem 1.8rem;
-  transition: background .3s var(--ease);
-  cursor: default; position: relative; overflow: hidden;
-}
-.problem-item::before {
-  content: '';
-  position: absolute; bottom: 0; left: 0; right: 0;
-  height: 2px; background: var(--red);
-  transform: scaleX(0); transform-origin: left;
-  transition: transform .4s var(--ease-out);
-}
-.problem-item:hover { background: rgba(255,0,0,.06); }
-.problem-item:hover::before { transform: scaleX(1); }
-
-.problem-num {
-  font-family: 'Qurova', sans-serif; font-weight: 600;
-  font-size: 2.8rem; color: var(--red);
-  opacity: .45; line-height: 1;
-  margin-bottom: .6rem;
-  transition: opacity .3s, color .3s;
-}
-.problem-text {
-  font-size: .85rem; font-weight: 300;
-  color: var(--muted); line-height: 1.75;
-  transition: color .3s;
-}
-.problem-text strong { color: rgba(245,245,247,.80); font-weight: 600; transition: color .3s; }
-.problem-item:hover .problem-num { color: #fff; opacity: 1; }
-.problem-item:hover .problem-text { color: rgba(245,245,247,.85); }
-.problem-item:hover .problem-text strong { color: #fff; }
-
-/* Cita */
-.problem-quote {
-  margin-top: 3.5rem;
-  padding: 2.2rem 2.8rem;
-  border-left: none;
-  background: var(--red);
-  border-radius: 4px;
-}
-.problem-quote p {
-  font-family: 'Qurova', sans-serif; font-weight: 300;
-  font-size: clamp(1rem, 2vw, 1.35rem);
-  color: #fff; line-height: 1.6;
-  font-style: italic;
-}
-.problem-quote cite {
-  display: block; margin-top: .75rem;
-  font-size: .58rem; letter-spacing: .2em; text-transform: uppercase;
-  color: rgba(255,255,255,.65); font-weight: 600; font-style: normal;
-}
-
-/* Social proof */
-.social-proof {
-  display: flex; gap: 0;
-  margin-top: 3rem;
-  border-top: 1px solid var(--border);
-  border-bottom: 1px solid var(--border);
-}
-.social-proof-item {
-  flex: 1; padding: 2rem 1.5rem;
-  border-right: 1px solid var(--border);
-  text-align: center;
-}
-.social-proof-item:last-child { border-right: none; }
-.proof-num {
-  font-family: 'Qurova', sans-serif; font-weight: 400;
-  font-size: 2.8rem; color: var(--light); line-height: 1;
-  margin-bottom: .4rem;
-}
-.proof-num.accent { color: var(--red); }
-.proof-label {
-  font-size: .58rem; font-weight: 300; letter-spacing: .14em;
-  text-transform: uppercase; color: var(--muted2);
-}
-
-/* ═══════════════════════════════════════════
-   PORTFOLIO
-═══════════════════════════════════════════ */
-.portfolio-section {
-  background: var(--dark);
-  padding: clamp(5rem,10vw,9rem) clamp(1.5rem,6vw,6rem);
-}
-.portfolio-inner {
-  max-width: 1240px; margin: 0 auto;
-  display: grid;
-  grid-template-columns: 280px 1fr;
-  gap: 3.5rem;
-  align-items: center;
-}
-.portfolio-text {
-  display: flex; flex-direction: column;
-  gap: 1.2rem;
-  position: sticky; top: 80px;
-}
-.portfolio-text .section-eyebrow { margin-bottom: 0; }
-.portfolio-text .section-h2 {
-  font-size: clamp(2rem, 4vw, 3.2rem);
-  line-height: 1.05;
-  margin-bottom: 0;
-}
-.portfolio-text .section-lead {
-  font-size: .85rem;
-  margin-bottom: 0;
-  max-width: 100%;
-}
-.portfolio-more {
-  display: inline-flex; align-items: center; gap: .5rem;
-  font-size: .62rem; font-weight: 600;
-  letter-spacing: .12em; text-transform: uppercase;
-  color: var(--red); border: 1px solid rgba(255,0,0,.35);
-  padding: .5rem 1rem;
-  transition: background .25s, color .25s;
-  border-radius: 2px;
-  align-self: flex-start;
-  margin-top: .4rem;
-}
-.portfolio-more:hover { background: var(--red); color: #fff; }
-
-/* Grid 3×3 */
-.portfolio-grid {
-  display: grid;
-  grid-template-columns: repeat(3, 1fr);
-  gap: 5px;
-}
-.portfolio-item {
-  position: relative; overflow: hidden;
-  aspect-ratio: 4/3; cursor: pointer;
-  border-radius: 2px;
-}
-.portfolio-item img {
-  width: 100%; height: 100%; object-fit: cover; object-position: center;
-  transition: transform .6s var(--ease), filter .45s var(--ease);
-  display: block;
-}
-.portfolio-item:hover img { transform: scale(1.07); filter: brightness(.45); }
-.portfolio-item-overlay {
-  position: absolute; inset: 0;
-  display: flex; align-items: flex-end; padding: .7rem;
-  opacity: 0; transition: opacity .35s var(--ease);
-  background: linear-gradient(to top, rgba(255,0,0,.7) 0%, transparent 60%);
-}
-.portfolio-item:hover .portfolio-item-overlay { opacity: 1; }
-.portfolio-item-label {
-  font-size: .65rem; font-weight: 600;
-  color: #fff; letter-spacing: .08em;
-  text-transform: uppercase;
-}
-.play-badge {
-  position: absolute; top: 50%; left: 50%;
-  transform: translate(-50%,-50%) scale(.7);
-  width: 36px; height: 36px; border-radius: 50%;
-  background: rgba(255,0,0,.85);
-  display: flex; align-items: center; justify-content: center;
-  opacity: 0; transition: opacity .35s, transform .35s var(--ease-out);
-}
-.portfolio-item:hover .play-badge { opacity: 1; transform: translate(-50%,-50%) scale(1); }
-.play-badge svg { width: 13px; height: 13px; fill: #fff; margin-left: 2px; }
-
-/* ═══════════════════════════════════════════
-   MODALES
-═══════════════════════════════════════════ */
-.modal-overlay {
-  position: fixed; inset: 0; z-index: 1200;
-  background: rgba(0,0,0,.88);
-  display: flex; align-items: center; justify-content: center;
-  opacity: 0; pointer-events: none;
-  transition: opacity .35s var(--ease);
-  backdrop-filter: blur(12px);
-}
-.modal-overlay.open { opacity: 1; pointer-events: auto; }
-.modal-close {
-  position: absolute; top: 1.2rem; right: 1.6rem;
-  background: none; border: none; cursor: pointer;
-  font-size: .65rem; font-weight: 600; letter-spacing: .12em; text-transform: uppercase;
-  color: rgba(255,255,255,.5); transition: color .2s;
-  font-family: 'Plus Jakarta Sans', sans-serif; z-index: 10;
-}
-.modal-close:hover { color: #fff; }
-.modal-video-box { position: relative; width: 90%; max-width: 900px; background: #000; aspect-ratio: 16/9; border-radius: 4px; overflow: hidden; }
-.modal-video-box iframe { width: 100%; height: 100%; border: none; }
-.modal-carousel-box { position: relative; width: 90%; max-width: 920px; }
-.carousel-track { position: relative; overflow: hidden; border-radius: 4px; }
-.carousel-img { width: 100%; display: none; }
-.carousel-img.active { display: block; }
-.carousel-nav { display: flex; align-items: center; justify-content: center; gap: 1rem; margin-top: .9rem; }
-.carousel-btn { background: rgba(255,255,255,.1); border: none; color: #fff; width: 36px; height: 36px; border-radius: 50%; cursor: pointer; font-size: 1rem; transition: background .2s; display: flex; align-items: center; justify-content: center; }
-.carousel-btn:hover { background: rgba(255,0,0,.65); }
-.carousel-dots { display: flex; gap: .5rem; }
-.carousel-dot { width: 6px; height: 6px; border-radius: 50%; background: rgba(255,255,255,.25); cursor: pointer; transition: background .2s; }
-.carousel-dot.active { background: var(--red); }
-
-/* ═══════════════════════════════════════════
-   CÓMO TRABAJAMOS
-═══════════════════════════════════════════ */
-.how-section {
-  background: var(--dark2);
-  padding: clamp(5rem,10vw,9rem) clamp(1.5rem,6vw,6rem);
-}
-.how-inner { max-width: 1100px; margin: 0 auto; }
-.how-steps {
-  display: grid; grid-template-columns: repeat(5,1fr);
-  gap: 0; margin-top: 3.5rem; position: relative;
-}
-.how-steps::before {
-  content: '';
-  position: absolute; top: 1.85rem;
-  left: 10%; right: 10%; height: 1px;
-  background: linear-gradient(90deg, transparent, rgba(255,0,0,.4) 20%, rgba(255,0,0,.4) 80%, transparent);
-  z-index: 0;
-}
-.how-step {
-  position: relative; z-index: 1;
-  display: flex; flex-direction: column;
-  align-items: center; text-align: center; padding: 0 1rem;
-}
-.how-step-num {
-  width: 3.7rem; height: 3.7rem; border-radius: 50%;
-  background: var(--dark2); border: 1px solid rgba(255,0,0,.4);
-  display: flex; align-items: center; justify-content: center;
-  font-family: 'Qurova', sans-serif; font-weight: 400;
-  font-size: .92rem; color: var(--red);
-  margin-bottom: 1.2rem;
-  transition: background .3s, border-color .3s, color .3s, font-weight .1s;
-  flex-shrink: 0;
-}
-.how-step:hover .how-step-num {
-  background: var(--red);
-  border-color: var(--red);
-  color: #fff;
-  font-weight: 600;
-}
-.how-step-title { font-weight: 500; font-size: .88rem; color: var(--light); margin-bottom: .4rem; }
-.how-step-desc { font-size: .73rem; font-weight: 300; color: rgba(245,245,247,.42); line-height: 1.65; }
-
-/* Garantía */
-.guarantee-block {
-  margin-top: 3.5rem;
-  padding: 1.8rem 2.4rem;
-  border-left: 2px solid rgba(255,0,0,.4);
-  background: var(--red-soft);
-  max-width: 640px; border-radius: 0 4px 4px 0;
-}
-.guarantee-block p {
-  font-size: .85rem; font-weight: 300;
-  color: rgba(245,245,247,.62); line-height: 1.75;
-}
-.guarantee-block strong { color: var(--light); font-weight: 600; }
-
-/* ═══════════════════════════════════════════
-   SERVICIOS
-═══════════════════════════════════════════ */
-.servicios-section {
-  background: var(--dark);
-  padding: clamp(5rem,10vw,9rem) clamp(1.5rem,6vw,6rem);
-}
-.servicios-inner { max-width: 1100px; margin: 0 auto; }
-
-/* Grid de servicios */
-.servicios-grid {
-  display: grid;
-  grid-template-columns: repeat(3, 1fr);
-  gap: 1px; background: var(--border);
-  margin-top: 3.5rem;
-  border: 1px solid var(--border);
-  border-radius: 4px; overflow: hidden;
-}
-.servicio-card {
-  background: var(--dark2);
-  padding: 2.2rem 1.8rem;
-  display: flex; flex-direction: column; gap: .9rem;
-  position: relative; overflow: hidden;
-  transition: background .3s var(--ease);
-}
-.servicio-card:hover { background: rgba(255,0,0,.05); }
-.servicio-card::after {
-  content: '';
-  position: absolute; bottom: 0; left: 0; right: 0;
-  height: 2px; background: var(--red);
-  transform: scaleX(0); transform-origin: left;
-  transition: transform .4s var(--ease-out);
-}
-.servicio-card:hover::after { transform: scaleX(1); }
-.servicio-icon {
-  width: 42px; height: 42px;
-  border: 1px solid rgba(255,0,0,.3);
-  border-radius: 50%;
-  display: flex; align-items: center; justify-content: center;
-  flex-shrink: 0;
-}
-.servicio-icon svg { width: 18px; height: 18px; fill: var(--red); }
-.servicio-title {
-  font-family: 'Qurova', sans-serif; font-weight: 500;
-  font-size: .95rem; color: var(--light); line-height: 1.2;
-}
-.servicio-desc {
-  font-size: .78rem; font-weight: 300;
-  color: rgba(245,245,247,.45); line-height: 1.7;
-}
-.servicio-tags {
-  display: flex; flex-wrap: wrap; gap: .35rem;
-  margin-top: .4rem;
-}
-.servicio-tag {
-  font-size: .52rem; font-weight: 600;
-  letter-spacing: .12em; text-transform: uppercase;
-  color: var(--red); background: rgba(255,0,0,.08);
-  padding: .22rem .55rem; border-radius: 2px;
-}
-
-/* Bloque canales integrados */
-.canales-block {
-  margin-top: 4rem;
-  padding: 2.8rem;
-  background: var(--dark2);
-  border: 1px solid var(--border);
-  border-radius: 4px;
-  display: grid;
-  grid-template-columns: 1fr 1fr;
-  gap: 3rem; align-items: center;
-}
-.canales-text .section-eyebrow { margin-bottom: .8rem; }
-.canales-text h3 {
-  font-family: 'Qurova', sans-serif; font-weight: 300;
-  font-size: clamp(1.4rem, 3vw, 2.2rem);
-  line-height: 1.12; letter-spacing: -.02em;
-  color: var(--light); margin-bottom: 1rem;
-}
-.canales-text h3 em { font-style: normal; color: var(--red); }
-.canales-text p {
-  font-size: .82rem; font-weight: 300;
-  color: rgba(245,245,247,.50); line-height: 1.8;
-}
-.canales-list {
-  display: flex; flex-direction: column; gap: 1rem;
-}
-.canal-item {
-  display: flex; align-items: flex-start; gap: 1rem;
-  padding: 1.1rem 1.3rem;
-  background: var(--dark3);
-  border-radius: 3px;
-  border: 1px solid var(--border);
-  transition: border-color .3s var(--ease);
-}
-.canal-item:hover { border-color: rgba(255,0,0,.3); }
-.canal-dot {
-  width: 8px; height: 8px; border-radius: 50%;
-  background: var(--red); flex-shrink: 0; margin-top: .28rem;
-}
-.canal-name {
-  font-size: .68rem; font-weight: 600;
-  letter-spacing: .1em; text-transform: uppercase;
-  color: var(--light); margin-bottom: .2rem;
-}
-.canal-desc {
-  font-size: .72rem; font-weight: 300;
-  color: rgba(245,245,247,.40); line-height: 1.6;
-}
-
-@media (max-width: 900px) {
-  .servicios-grid { grid-template-columns: 1fr; }
-  .canales-block { grid-template-columns: 1fr; gap: 2rem; }
-}
-@media (max-width: 640px) {
-  .servicios-grid { grid-template-columns: 1fr; }
-}
-
-/* ═══════════════════════════════════════════
-   PLANES — estilo Apple pricing
-═══════════════════════════════════════════ */
-.plans-section {
-  background: var(--dark);
-  padding: clamp(5rem,10vw,9rem) clamp(1.5rem,6vw,6rem);
-}
-.plans-inner { max-width: 1100px; margin: 0 auto; }
-.plans-header { text-align: center; margin-bottom: 4rem; }
-.plans-header .section-lead { max-width: 600px; margin: 0 auto; text-align: center; margin-bottom: 0; }
-
-.plans-grid {
-  display: grid; grid-template-columns: repeat(3,1fr);
-  gap: 1px; background: var(--border);
-  border: 1px solid var(--border);
-  border-radius: 4px; overflow: hidden;
-}
-.plan-card {
-  background: var(--dark2);
-  padding: 2.8rem 2rem;
-  display: flex; flex-direction: column; gap: 1.4rem;
-  position: relative;
-  transition: background .3s var(--ease);
-}
-.plan-card:hover { background: #1e1e30; }
-.plan-card.featured {
-  background: var(--dark3);
-  border-top: 2px solid var(--red);
-}
-.plan-card.featured::before {
-  content: 'más popular';
-  position: absolute; top: -1px; right: 1.5rem;
-  background: var(--red); color: #fff;
-  font-size: .52rem; font-weight: 700;
-  letter-spacing: .14em; text-transform: uppercase;
-  padding: .24rem .7rem; border-radius: 0 0 3px 3px;
-}
-.plan-letter {
-  font-family: 'Qurova', sans-serif; font-weight: 400;
-  font-size: 3.6rem; color: var(--light); line-height: 1;
-}
-.plan-name {
-  font-size: .55rem; font-weight: 300;
-  letter-spacing: .28em; text-transform: uppercase;
-  color: var(--muted2); margin-top: -.5rem;
-}
-.plan-name strong {
-  color: var(--red); display: block;
-  font-size: .65rem; letter-spacing: .2em; font-weight: 600;
-}
-.plan-desc {
-  font-size: .80rem; font-weight: 300;
-  color: rgba(245,245,247,.45); line-height: 1.7;
-  border-top: 1px solid var(--border); padding-top: 1.2rem;
-}
-.plan-features { list-style: none; display: flex; flex-direction: column; gap: .5rem; }
-.plan-features li {
-  font-size: .75rem; font-weight: 300;
-  color: rgba(245,245,247,.55); line-height: 1.55;
-  padding-left: 1rem; position: relative;
-}
-.plan-features li::before {
-  content: '—'; position: absolute; left: 0;
-  color: var(--red); font-size: .58rem;
-}
-.plan-features li.dim {
-  color: rgba(245,245,247,.18); font-style: italic; font-size: .70rem;
-}
-.plan-features li.highlight strong { color: var(--red); }
-.plan-price { margin-top: auto; padding-top: 1.4rem; border-top: 1px solid var(--border); }
-.plan-amount {
-  font-family: 'Qurova', sans-serif; font-weight: 400;
-  font-size: 1.9rem; color: var(--light);
-}
-.plan-amount.quote { font-size: 1.45rem; color: var(--red); }
-.plan-period {
-  font-size: .62rem; font-weight: 300;
-  color: var(--muted2); display: block; margin-top: .15rem;
-}
-.plan-btn {
-  display: block; text-align: center; margin-top: 1.2rem;
-  font-size: .65rem; font-weight: 600;
-  letter-spacing: .1em; text-transform: uppercase;
-  padding: .72rem 1rem; border-radius: 2px;
-  border: 1px solid var(--border2); color: var(--light);
-  transition: background .25s, border-color .25s, color .25s;
-}
-.plan-btn:hover, .plan-card.featured .plan-btn {
-  background: var(--red); border-color: var(--red); color: #fff;
-}
-.plans-note {
-  text-align: center; margin-top: 2rem;
-  font-size: .64rem; font-weight: 300;
-  color: var(--muted2); letter-spacing: .06em;
-}
-
-/* FAQ */
-.faq-grid {
-  display: grid; grid-template-columns: repeat(3,1fr);
-  gap: 1px; background: var(--border);
-  margin-top: 3rem; border-radius: 4px; overflow: hidden;
-}
-.faq-item {
-  background: var(--dark2); padding: 1.6rem 1.8rem;
-}
-.faq-q {
-  font-size: .72rem; font-weight: 600;
-  color: var(--light); margin-bottom: .55rem; letter-spacing: .02em;
-}
-.faq-a {
-  font-size: .75rem; font-weight: 300;
-  color: rgba(245,245,247,.42); line-height: 1.7;
-}
-
-/* ═══════════════════════════════════════════
-   WHY — banda roja
-═══════════════════════════════════════════ */
-.why-section {
-  background: var(--red);
-  padding: clamp(4rem,8vw,7rem) clamp(1.5rem,6vw,6rem);
-}
-.why-inner { max-width: 1100px; margin: 0 auto; text-align: center; }
-.why-section .section-h2 {
-  color: #fff; font-size: clamp(1.9rem,3.8vw,3rem);
-  margin: 0;
-}
-.why-section .section-h2 em { color: rgba(255,255,255,.4); }
-
-/* ═══════════════════════════════════════════
-   CTA FINAL
-═══════════════════════════════════════════ */
-.cta-section {
-  background: var(--dark);
-  padding: clamp(6rem,12vw,11rem) clamp(1.5rem,6vw,6rem);
-  text-align: center; position: relative; overflow: hidden;
-}
-/* Typographic watermark */
-.cta-bg-text {
-  position: absolute; top: 50%; left: 50%;
-  transform: translate(-50%,-50%);
-  font-family: 'Qurova', sans-serif; font-weight: 700;
-  font-size: clamp(10rem,26vw,20rem);
-  white-space: nowrap; color: rgba(255,0,0,.028);
-  letter-spacing: -.06em;
-  pointer-events: none; user-select: none;
-}
-.cta-content { position: relative; z-index: 1; max-width: 640px; margin: 0 auto; }
-.cta-content .section-h2 { margin-bottom: 1.2rem; }
-.cta-desc {
-  font-size: .97rem; font-weight: 300;
-  color: var(--muted); line-height: 1.8;
-  margin-bottom: 2.8rem;
-}
-.cta-form {
-  display: flex; gap: 0; max-width: 460px; margin: 0 auto 1rem;
-  border-radius: 2px; overflow: hidden;
-  border: 1px solid var(--border2);
-}
-.cta-form input {
-  flex: 1; padding: .9rem 1.2rem;
-  background: var(--dark2); border: none;
-  color: var(--light);
-  font-family: 'Plus Jakarta Sans', sans-serif;
-  font-size: .82rem; font-weight: 300;
-  outline: none; transition: background .2s;
-}
-.cta-form input::placeholder { color: var(--muted2); }
-.cta-form input:focus { background: var(--dark3); }
-.cta-form button {
-  padding: .9rem 1.5rem;
-  background: var(--red); color: #fff; border: none; cursor: pointer;
-  font-family: 'Plus Jakarta Sans', sans-serif;
-  font-size: .68rem; font-weight: 600;
-  letter-spacing: .1em; text-transform: uppercase;
-  transition: background .25s; white-space: nowrap;
-}
-.cta-form button:hover { background: #e00; }
-.cta-note { font-size: .67rem; font-weight: 300; color: var(--muted2); }
-.cta-note strong { color: rgba(245,245,247,.55); font-weight: 600; }
-
-/* WhatsApp CTA */
-.cta-wa-wrap {
-  display: flex; flex-direction: column; align-items: center;
-  gap: 1rem; margin-bottom: 1.2rem;
-}
-.btn-whatsapp {
-  display: inline-flex; align-items: center; gap: .7rem;
-  font-size: .80rem; font-weight: 600;
-  letter-spacing: .06em; text-transform: uppercase;
-  padding: 1rem 2.2rem;
-  background: #25D366; color: #fff;
-  border-radius: 2px;
-  transition: background .25s, transform .2s var(--ease-out), box-shadow .25s;
-  border: none; cursor: pointer;
-}
-.btn-whatsapp:hover { background: #1ebe5d; transform: translateY(-2px); box-shadow: 0 8px 28px rgba(37,211,102,.28); }
-.btn-whatsapp svg { width: 20px; height: 20px; fill: #fff; flex-shrink: 0; }
-.cta-divider {
-  display: flex; align-items: center; gap: 1rem;
-  width: 100%; max-width: 360px;
-  font-size: .58rem; letter-spacing: .18em; text-transform: uppercase;
-  color: var(--muted2);
-}
-.cta-divider::before, .cta-divider::after {
-  content: ''; flex: 1; height: 1px; background: var(--border);
-}
-
-/* ═══════════════════════════════════════════
-   FOOTER
-═══════════════════════════════════════════ */
-footer {
-  background: var(--dark2);
-  padding: 2.2rem clamp(1.5rem,6vw,6rem);
-  display: flex; align-items: center; justify-content: space-between; flex-wrap: wrap;
-  gap: 1.2rem; border-top: 1px solid var(--border);
-}
-.footer-logo { height: 18px; width: auto; display: block; }
-.footer-logo-block { height: 30px; width: auto; display: none; }
-.footer-links { display: flex; gap: 1.8rem; align-items: center; }
-.footer-links a {
-  font-size: .62rem; font-weight: 300;
-  color: var(--muted2); letter-spacing: .08em; text-transform: uppercase;
-  transition: color .2s;
-}
-.footer-links a:hover { color: var(--light); }
-.footer-links .footer-ig svg { width: 14px; height: 14px; fill: var(--muted2); transition: fill .2s; }
-.footer-links .footer-ig:hover svg { fill: var(--light); }
-.footer-copy { font-size: .60rem; font-weight: 300; color: var(--muted2); }
-
-/* ═══════════════════════════════════════════
-   ANIMACIONES
-═══════════════════════════════════════════ */
-@keyframes fadeUp {
-  from { opacity: 0; transform: translateY(22px); }
-  to   { opacity: 1; transform: translateY(0); }
-}
-@keyframes bounce {
-  0%,100% { transform: translateX(-50%) translateY(0); }
-  50%      { transform: translateX(-50%) translateY(8px); }
-}
-.reveal { opacity: 1; transform: translateY(0); }
-.reveal.will-animate {
-  opacity: 0; transform: translateY(18px);
-  transition: opacity .8s var(--ease-out), transform .8s var(--ease-out);
-}
-.reveal.will-animate.visible { opacity: 1; transform: translateY(0); }
-
-/* ═══════════════════════════════════════════
-   RESPONSIVE
-═══════════════════════════════════════════ */
-@media (max-width: 1024px) {
-  .problems-grid { grid-template-columns: repeat(2,1fr); }
-}
-/* ═══════════════════════════════════════════
-   HAMBURGUESA
-═══════════════════════════════════════════ */
-.nav-hamburger {
-  display: none;
-  flex-direction: column; justify-content: center; align-items: center;
-  gap: 5px;
-  width: 36px; height: 36px;
-  background: none; border: none; cursor: pointer;
-  padding: 4px; z-index: 1001;
-}
-.nav-hamburger span {
-  display: block; width: 22px; height: 1.5px;
-  background: rgba(245,245,247,.80);
-  transition: transform .35s var(--ease-out), opacity .25s var(--ease), width .3s var(--ease);
-  transform-origin: center;
-}
-/* Estado abierto — X */
-.nav-hamburger.open span:nth-child(1) { transform: translateY(6.5px) rotate(45deg); }
-.nav-hamburger.open span:nth-child(2) { opacity: 0; width: 0; }
-.nav-hamburger.open span:nth-child(3) { transform: translateY(-6.5px) rotate(-45deg); }
-
-/* Drawer mobile */
-.nav-drawer {
-  display: none;
-  position: fixed; top: 48px; left: 0; right: 0;
-  background: rgba(14,14,26,.97);
-  backdrop-filter: saturate(180%) blur(24px);
-  -webkit-backdrop-filter: saturate(180%) blur(24px);
-  border-bottom: 1px solid var(--border);
-  z-index: 899;
-  transform: translateY(-12px);
-  opacity: 0;
-  pointer-events: none;
-  transition: transform .35s var(--ease-out), opacity .3s var(--ease);
-}
-.nav-drawer.open {
-  transform: translateY(0);
-  opacity: 1;
-  pointer-events: auto;
-}
-.nav-drawer-inner {
-  display: flex; flex-direction: column;
-  padding: 1.8rem 1.4rem 2rem;
-  gap: 0;
-}
-.nav-drawer-link {
-  font-family: 'Qurova', sans-serif;
-  font-size: .72rem; font-weight: 300;
-  letter-spacing: .2em; text-transform: uppercase;
-  color: rgba(245,245,247,.65);
-  padding: 1rem 0;
-  border-bottom: 1px solid var(--border);
-  transition: color .2s var(--ease);
-  display: flex; align-items: center; gap: .7rem;
-}
-.nav-drawer-link:last-of-type { border-bottom: none; }
-.nav-drawer-link:hover { color: #fff; }
-.nav-drawer-link svg { width: 16px; height: 16px; fill: rgba(245,245,247,.5); flex-shrink: 0; }
-.nav-drawer-cta {
-  margin-top: 1.4rem;
-  display: block; text-align: center;
-  font-size: .68rem; font-weight: 600;
-  letter-spacing: .1em; text-transform: uppercase;
-  padding: .9rem 1rem;
-  background: var(--red); color: #fff;
-  border-radius: 2px;
-  transition: background .25s;
-}
-.nav-drawer-cta:hover { background: #e00; }
-
-@media (max-width: 900px) {
-  nav#nav { padding: 0 1.2rem; height: 48px; }
-  .nav-links, .nav-cta { display: none; }
-  .nav-logo-horiz { display: none; }
-  .nav-logo-block { display: block; }
-  .nav-hamburger { display: flex; }
-  .nav-drawer { display: block; }
-  .hero-video-wrap iframe { width: 177.78vh; height: 177.78vh; }
-  .portfolio-inner { grid-template-columns: 1fr; gap: 2rem; }
-  .portfolio-text { position: static; }
-  .portfolio-grid { grid-template-columns: repeat(2,1fr); }
-  .how-steps { grid-template-columns: 1fr; gap: 2rem; }
-  .how-steps::before { display: none; }
-  .plans-grid { grid-template-columns: 1fr; }
-  .faq-grid { grid-template-columns: 1fr; }
-  .cta-form { flex-direction: column; border-radius: 3px; }
-  .cta-form input { border-radius: 0; }
-  footer { flex-direction: column; align-items: flex-start; padding: 1.8rem 1.4rem; }
-  .footer-logo { display: none; }
-  .footer-logo-block { display: block; }
-}
-@media (max-width: 640px) {
-  .problems-grid { grid-template-columns: 1fr; }
-  .social-proof { flex-direction: column; }
-  .social-proof-item { border-right: none; border-bottom: 1px solid var(--border); }
-  .social-proof-item:last-child { border-bottom: none; }
-}
-</style>
+  <!-- Estilos -->
+  <link rel="stylesheet" href="css/styles.css">
 </head>
 <body>
 
-<!-- ══ NAV ══ -->
-<nav id="nav">
-  <a href="/">
-    <img src="img/logo-horizontal.png" alt="humanthink" class="nav-logo-horiz" width="150" height="20">
-    <img src="img/logo-block.png" alt="humanthink" class="nav-logo-block" width="64" height="32">
-  </a>
-  <ul class="nav-links">
-    <li><a href="#servicios">servicios</a></li>
-    <li><a href="#trabajos">trabajos</a></li>
-    <li><a href="#planes">planes</a></li>
-    <li><a href="#contacto">contacto</a></li>
-    <li>
-      <a href="https://www.instagram.com/humanthink.cl/" target="_blank" rel="noopener" class="nav-ig" aria-label="Instagram">
-        <svg viewBox="0 0 24 24"><path d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069zm0-2.163c-3.259 0-3.667.014-4.947.072-4.358.2-6.78 2.618-6.98 6.98-.059 1.281-.073 1.689-.073 4.948 0 3.259.014 3.668.072 4.948.2 4.358 2.618 6.78 6.98 6.98 1.281.058 1.689.072 4.948.072 3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.979-6.98.059-1.28.073-1.689.073-4.948 0-3.259-.014-3.667-.072-4.947-.196-4.354-2.617-6.78-6.979-6.98-1.281-.059-1.69-.073-4.949-.073zm0 5.838c-3.403 0-6.162 2.759-6.162 6.162s2.759 6.163 6.162 6.163 6.162-2.759 6.162-6.163c0-3.403-2.759-6.162-6.162-6.162zm0 10.162c-2.209 0-4-1.79-4-4 0-2.209 1.791-4 4-4s4 1.791 4 4c0 2.21-1.791 4-4 4zm6.406-11.845c-.796 0-1.441.645-1.441 1.44s.645 1.44 1.441 1.44c.795 0 1.439-.645 1.439-1.44s-.644-1.44-1.439-1.44z"/></svg>
-      </a>
-    </li>
-  </ul>
-  <a href="https://wa.me/56912345678?text=Hola%2C%20quiero%20un%20diagn%C3%B3stico%20gratuito%20para%20mi%20marca" target="_blank" rel="noopener" class="nav-cta">quiero empezar</a>
-  <button class="nav-hamburger" id="navHamburger" aria-label="Abrir menú" aria-expanded="false">
-    <span></span><span></span><span></span>
-  </button>
-</nav>
-
-<!-- ══ DRAWER MOBILE ══ -->
-<div class="nav-drawer" id="navDrawer" aria-hidden="true">
-  <div class="nav-drawer-inner">
-    <a href="#servicios" class="nav-drawer-link">servicios</a>
-    <a href="#trabajos" class="nav-drawer-link">trabajos</a>
-    <a href="#planes" class="nav-drawer-link">planes</a>
-    <a href="#contacto" class="nav-drawer-link">contacto</a>
-    <a href="https://www.instagram.com/humanthink.cl/" target="_blank" rel="noopener" class="nav-drawer-link">
-      <svg viewBox="0 0 24 24"><path d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069zm0-2.163c-3.259 0-3.667.014-4.947.072-4.358.2-6.78 2.618-6.98 6.98-.059 1.281-.073 1.689-.073 4.948 0 3.259.014 3.668.072 4.948.2 4.358 2.618 6.78 6.98 6.98 1.281.058 1.689.072 4.948.072 3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.979-6.98.059-1.28.073-1.689.073-4.948 0-3.259-.014-3.667-.072-4.947-.196-4.354-2.617-6.78-6.979-6.98-1.281-.059-1.69-.073-4.949-.073zm0 5.838c-3.403 0-6.162 2.759-6.162 6.162s2.759 6.163 6.162 6.163 6.162-2.759 6.162-6.163c0-3.403-2.759-6.162-6.162-6.162zm0 10.162c-2.209 0-4-1.79-4-4 0-2.209 1.791-4 4-4s4 1.791 4 4c0 2.21-1.791 4-4 4zm6.406-11.845c-.796 0-1.441.645-1.441 1.44s.645 1.44 1.441 1.44c.795 0 1.439-.645 1.439-1.44s-.644-1.44-1.439-1.44z"/></svg>
-      Instagram
+  <!-- ══════════════════════════════
+       NAV
+  ══════════════════════════════ -->
+  <nav>
+    <a href="#inicio" class="nav-logo" aria-label="Inicio">
+      <img src="imagenes/logo.svg" alt="Steinberg Leiva" width="120" height="62">
     </a>
-    <a href="https://wa.me/56912345678?text=Hola%2C%20quiero%20un%20diagn%C3%B3stico%20gratuito%20para%20mi%20marca" target="_blank" rel="noopener" class="nav-drawer-cta">quiero empezar</a>
-  </div>
-</div>
 
-<!-- ══ HERO ══ -->
-<section class="hero" id="inicio">
-  <div class="hero-video-wrap">
-    <iframe src="https://player.vimeo.com/video/1177369177?h=4baf7d17e5&autoplay=1&muted=1&loop=1&background=1&autopause=0"
-      allow="autoplay; fullscreen; picture-in-picture" allowfullscreen frameborder="0"
-      referrerpolicy="strict-origin-when-cross-origin" title="humanthink showreel"></iframe>
-  </div>
-  <div class="hero-overlay"></div>
-  <div class="hero-grain"></div>
-  <div class="hero-content">
-    <p class="hero-eyebrow">Consultora Creativa · Santiago, Chile</p>
-    <div class="hero-slides" id="heroSlides">
-      <div class="slide-fade-wrap" id="slideFadeWrap">
-        <h1 class="slide-h1-fixed">
-          <span id="slideConcepto">El deseo</span><em class="slide-vende"> vende</em>
-        </h1>
-        <p class="slide-sub" id="slideSub">Conecta con lo que tu cliente desea sentir — antes de que lo piense.</p>
-        <p class="slide-ideal" id="slideIdeal">Retail, moda, gastronomía, turismo, lifestyle</p>
-      </div>
-    </div>
-    <div class="hero-cta-wrap" id="heroCta">
-      <a href="https://wa.me/56912345678?text=Hola%2C%20quiero%20un%20diagn%C3%B3stico%20gratuito%20para%20mi%20marca" target="_blank" rel="noopener" class="btn-primary">solicitar diagnóstico</a>
-      <a href="#planes" class="btn-outline">ver planes</a>
-    </div>
-  </div>
-  <div class="hero-scroll">scroll</div>
-  <div class="hero-progress"><div class="hero-progress-bar" id="progressBar"></div></div>
-</section>
-
-<!-- ══ PROBLEMA ══ -->
-<div class="divider"></div>
-<section class="section-wrap problem-section" id="problema">
-  <div class="section-inner">
-    <span class="section-eyebrow reveal">¿te suena familiar?</span>
-    <h2 class="section-h2 reveal">Lo que le cuesta dinero<br>a tu marca <em>todos los días.</em></h2>
-    <p class="section-lead reveal">Tu marca habla todos los días. La pregunta es si está diciendo algo que convierte — o solo ruido que cuesta plata.</p>
-
-    <div class="problems-grid">
-      <div class="problem-item reveal">
-        <div class="problem-num">01</div>
-        <p class="problem-text">Pagas nivel junior y obtienes resultados junior. <strong>Tu marca lo refleja</strong> — y tus clientes lo sienten.</p>
-      </div>
-      <div class="problem-item reveal">
-        <div class="problem-num">02</div>
-        <p class="problem-text">Tu marca está <strong>desalineada con tus ventas</strong>. Pareces una cosa y vendes otra.</p>
-      </div>
-      <div class="problem-item reveal">
-        <div class="problem-num">03</div>
-        <p class="problem-text">Piezas bonitas que <strong>no venden</strong>. Agencias que no entienden tu negocio y te cobran igual.</p>
-      </div>
-      <div class="problem-item reveal">
-        <div class="problem-num">04</div>
-        <p class="problem-text">Tu equipo comercial trabaja <strong>sin apoyo visual ni conceptual</strong>. Venden a palo seco.</p>
-      </div>
-      <div class="problem-item reveal">
-        <div class="problem-num">05</div>
-        <p class="problem-text">Cada campaña parte <strong>desde cero</strong>. Sin sistema, sin coherencia, sin memoria de marca.</p>
-      </div>
-      <div class="problem-item reveal">
-        <div class="problem-num">06</div>
-        <p class="problem-text">Tu competencia <strong>se ve más grande</strong> que tú — aunque tú seas mejor. El diseño les da ventaja.</p>
-      </div>
-      <div class="problem-item reveal">
-        <div class="problem-num">07</div>
-        <p class="problem-text">Llevas meses publicando en Instagram <strong>sin identidad clara</strong>. Tu perfil parece de tres personas distintas. Canva no es una estrategia.</p>
-      </div>
-      <div class="problem-item reveal">
-        <div class="problem-num">08</div>
-        <p class="problem-text">Hiciste un Reel que funcionó — pero el link de bio <strong>no convierte</strong>. No tienes una página que cierre la venta.</p>
-      </div>
-    </div>
-
-    <blockquote class="problem-quote reveal">
-      <p>"El diseño sin propósito es un gasto. El branding sin análisis es una ruleta. La creatividad sin dirección es solo decoración."</p>
-      <cite>— humanthink</cite>
-    </blockquote>
-
-    <div class="social-proof reveal">
-      <div class="social-proof-item">
-        <div class="proof-num">+20</div>
-        <div class="proof-label">años de experiencia</div>
-      </div>
-      <div class="social-proof-item">
-        <div class="proof-num">+80</div>
-        <div class="proof-label">proyectos realizados</div>
-      </div>
-      <div class="social-proof-item">
-        <div class="proof-num accent">0</div>
-        <div class="proof-label">plantillas genéricas</div>
-      </div>
-    </div>
-  </div>
-</section>
-
-<!-- ══ PORTFOLIO ══ -->
-<div class="divider"></div>
-<section class="portfolio-section" id="trabajos">
-  <div class="portfolio-inner">
-    <div class="portfolio-text">
-      <span class="section-eyebrow reveal">casos reales</span>
-      <h2 class="section-h2 reveal">Ya lo hicimos.<br>Lo podemos<br>hacer <em>por ti.</em></h2>
-      <p class="section-lead reveal">Marcas que dejaron de ser wallpaper de LinkedIn para ser recordadas.</p>
-      <a href="#contacto" class="portfolio-more reveal">ver más casos &rarr;</a>
-    </div>
-    <div class="portfolio-grid reveal">
-      <div class="portfolio-item" onclick="openCarousel('dl365')">
-        <img src="img/portfolio-dl365.png" alt="DL365" loading="lazy">
-        <div class="portfolio-item-overlay"><span class="portfolio-item-label">DL365</span></div>
-        <div class="play-badge"><svg viewBox="0 0 24 24"><path d="M8 5v14l11-7z"/></svg></div>
-      </div>
-      <div class="portfolio-item" onclick="openCarousel('rueda')">
-        <img src="img/portfolio-rueda.png" alt="La Rueda" loading="lazy">
-        <div class="portfolio-item-overlay"><span class="portfolio-item-label">La Rueda</span></div>
-        <div class="play-badge"><svg viewBox="0 0 24 24"><path d="M8 5v14l11-7z"/></svg></div>
-      </div>
-      <div class="portfolio-item" onclick="openCarousel('interfaz')">
-        <img src="img/portfolio-interfaz.png" alt="Interfaz" loading="lazy">
-        <div class="portfolio-item-overlay"><span class="portfolio-item-label">Interfaz</span></div>
-        <div class="play-badge"><svg viewBox="0 0 24 24"><path d="M8 5v14l11-7z"/></svg></div>
-      </div>
-      <div class="portfolio-item" onclick="openCarousel('dossier')">
-        <img src="img/portfolio-dossier.png" alt="Branding" loading="lazy">
-        <div class="portfolio-item-overlay"><span class="portfolio-item-label">Branding</span></div>
-        <div class="play-badge"><svg viewBox="0 0 24 24"><path d="M8 5v14l11-7z"/></svg></div>
-      </div>
-      <div class="portfolio-item" onclick="openVideoModal('https://player.vimeo.com/video/657041932?autoplay=1')">
-        <img src="img/portfolio-videorrss.png" alt="Video RRSS" loading="lazy">
-        <div class="portfolio-item-overlay"><span class="portfolio-item-label">Video RRSS</span></div>
-        <div class="play-badge"><svg viewBox="0 0 24 24"><path d="M8 5v14l11-7z"/></svg></div>
-      </div>
-      <div class="portfolio-item" onclick="openVideoModal('https://player.vimeo.com/video/674895817?autoplay=1')">
-        <img src="img/portfolio-walmart.png" alt="Walmart" loading="lazy">
-        <div class="portfolio-item-overlay"><span class="portfolio-item-label">Walmart</span></div>
-        <div class="play-badge"><svg viewBox="0 0 24 24"><path d="M8 5v14l11-7z"/></svg></div>
-      </div>
-      <div class="portfolio-item" onclick="openCarousel('caso7')">
-        <img src="img/portfolio-caso7.png" alt="Caso 7" loading="lazy">
-        <div class="portfolio-item-overlay"><span class="portfolio-item-label">Caso 7</span></div>
-        <div class="play-badge"><svg viewBox="0 0 24 24"><path d="M8 5v14l11-7z"/></svg></div>
-      </div>
-      <div class="portfolio-item" onclick="openCarousel('caso8')">
-        <img src="img/portfolio-caso8.png" alt="Caso 8" loading="lazy">
-        <div class="portfolio-item-overlay"><span class="portfolio-item-label">Caso 8</span></div>
-        <div class="play-badge"><svg viewBox="0 0 24 24"><path d="M8 5v14l11-7z"/></svg></div>
-      </div>
-      <div class="portfolio-item" onclick="openCarousel('caso9')">
-        <img src="img/portfolio-caso9.png" alt="Caso 9" loading="lazy">
-        <div class="portfolio-item-overlay"><span class="portfolio-item-label">Caso 9</span></div>
-        <div class="play-badge"><svg viewBox="0 0 24 24"><path d="M8 5v14l11-7z"/></svg></div>
-      </div>
-    </div>
-  </div>
-</section>
-
-<!-- MODAL VIDEO -->
-<div class="modal-overlay" id="videoModal" onclick="closeVideoModal(event)">
-  <button class="modal-close" onclick="closeVideoModalDirect()">✕ cerrar</button>
-  <div class="modal-video-box">
-    <iframe id="modalVideoIframe" src="" allow="autoplay; fullscreen" allowfullscreen></iframe>
-  </div>
-</div>
-
-<!-- MODAL CARRUSEL -->
-<div class="modal-overlay" id="carouselModal" onclick="closeCarouselModal(event)">
-  <button class="modal-close" onclick="closeCarouselModalDirect()">✕ cerrar</button>
-  <div class="modal-carousel-box">
-    <div class="carousel-track" id="carouselTrack"></div>
-    <div class="carousel-nav">
-      <button class="carousel-btn" onclick="carouselPrev()">&#8592;</button>
-      <div class="carousel-dots" id="carouselDots"></div>
-      <button class="carousel-btn" onclick="carouselNext()">&#8594;</button>
-    </div>
-  </div>
-</div>
-
-<!-- ══ SERVICIOS ══ -->
-<div class="divider"></div>
-<section class="servicios-section" id="servicios">
-  <div class="servicios-inner">
-    <span class="section-eyebrow reveal">lo que hacemos</span>
-    <h2 class="section-h2 reveal">Tu marca, construida<br>desde <em>cero hasta vender.</em></h2>
-    <p class="section-lead reveal">No solo diseño. Estrategia, identidad, contenido y conversión — todo alineado, todo coherente.</p>
-
-    <div class="servicios-grid">
-
-      <!-- BRANDING -->
-      <div class="servicio-card reveal">
-        <div class="servicio-icon">
-          <svg viewBox="0 0 24 24"><path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm-1 14H9V8h2v8zm4 0h-2V8h2v8z"/><path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm0 18c-4.41 0-8-3.59-8-8s3.59-8 8-8 8 3.59 8 8-3.59 8-8 8zm-1-14h2v6l-2-2V6zm0 8h2v2h-2z"/></svg>
-        </div>
-        <p class="servicio-title">Branding & Identidad de Marca</p>
-        <p class="servicio-desc">Creamos tu marca desde cero: naming, logo, paleta de colores, tipografías, tono de voz y manual de identidad. Te mostramos cómo se vería en el mundo real antes de imprimir un peso.</p>
-        <div class="servicio-tags">
-          <span class="servicio-tag">Logo</span>
-          <span class="servicio-tag">Brand Book</span>
-          <span class="servicio-tag">Naming</span>
-          <span class="servicio-tag">Mockups</span>
-        </div>
-      </div>
-
-      <!-- CONTENIDO -->
-      <div class="servicio-card reveal">
-        <div class="servicio-icon">
-          <svg viewBox="0 0 24 24"><path d="M17 10.5V7c0-.55-.45-1-1-1H4c-.55 0-1 .45-1 1v10c0 .55.45 1 1 1h12c.55 0 1-.45 1-1v-3.5l4 4v-11l-4 4z"/></svg>
-        </div>
-        <p class="servicio-title">Contenido & Videos para RRSS</p>
-        <p class="servicio-desc">Diseñamos gráficas, Reels y videos cortos que hablan el lenguaje de tu marca. Contenido que vende lo que haces, muestra lo que vendes y comunica la experiencia de tu negocio.</p>
-        <div class="servicio-tags">
-          <span class="servicio-tag">Reels</span>
-          <span class="servicio-tag">TikTok</span>
-          <span class="servicio-tag">Instagram</span>
-          <span class="servicio-tag">Motion</span>
-        </div>
-      </div>
-
-      <!-- LANDING PAGE -->
-      <div class="servicio-card reveal">
-        <div class="servicio-icon">
-          <svg viewBox="0 0 24 24"><path d="M20 4H4c-1.1 0-2 .9-2 2v12c0 1.1.9 2 2 2h16c1.1 0 2-.9 2-2V6c0-1.1-.9-2-2-2zm0 14H4V6h16v12zM6 10h2v2H6zm0 4h8v2H6zm4-4h8v2h-8z"/></svg>
-        </div>
-        <p class="servicio-title">Landing Pages que Convierten</p>
-        <p class="servicio-desc">La página que cierra la venta después de tu Reel o campaña. Diseñada para convertir visitas en clientes — con tu identidad, tu oferta y un solo objetivo claro. Lista en 5 días hábiles.</p>
-        <div class="servicio-tags">
-          <span class="servicio-tag">Post-Reel</span>
-          <span class="servicio-tag">Campañas</span>
-          <span class="servicio-tag">Lanzamientos</span>
-          <span class="servicio-tag">Promociones</span>
-        </div>
-      </div>
-
-      <!-- ESTRATEGIA -->
-      <div class="servicio-card reveal">
-        <div class="servicio-icon">
-          <svg viewBox="0 0 24 24"><path d="M19 3H5c-1.1 0-2 .9-2 2v14c0 1.1.9 2 2 2h14c1.1 0 2-.9 2-2V5c0-1.1-.9-2-2-2zm-7 14l-5-5 1.41-1.41L12 14.17l7.59-7.59L21 8l-9 9z"/></svg>
-        </div>
-        <p class="servicio-title">Estrategia de Marca & Canales</p>
-        <p class="servicio-desc">Definimos qué decir, dónde decirlo y cómo decirlo. Analizamos tu negocio, tu competencia y tu cliente para diseñar una estrategia coherente en Instagram, TikTok y web.</p>
-        <div class="servicio-tags">
-          <span class="servicio-tag">Diagnóstico</span>
-          <span class="servicio-tag">Calendario</span>
-          <span class="servicio-tag">Tono de voz</span>
-        </div>
-      </div>
-
-      <!-- GRÁFICA COMERCIAL -->
-      <div class="servicio-card reveal">
-        <div class="servicio-icon">
-          <svg viewBox="0 0 24 24"><path d="M21 19V5c0-1.1-.9-2-2-2H5c-1.1 0-2 .9-2 2v14c0 1.1.9 2 2 2h14c1.1 0 2-.9 2-2zM8.5 13.5l2.5 3.01L14.5 12l4.5 6H5l3.5-4.5z"/></svg>
-        </div>
-        <p class="servicio-title">Gráfica Comercial & Kit de Ventas</p>
-        <p class="servicio-desc">Presentaciones, dossiers, catálogos y materiales para que tu equipo venda con respaldo visual. Diseño que habla por tu marca cuando tú no estás en la sala.</p>
-        <div class="servicio-tags">
-          <span class="servicio-tag">Dossier</span>
-          <span class="servicio-tag">Catálogo</span>
-          <span class="servicio-tag">Presentación</span>
-        </div>
-      </div>
-
-      <!-- ASESORÍA -->
-      <div class="servicio-card reveal">
-        <div class="servicio-icon">
-          <svg viewBox="0 0 24 24"><path d="M20 2H4c-1.1 0-2 .9-2 2v18l4-4h14c1.1 0 2-.9 2-2V4c0-1.1-.9-2-2-2zm-2 12H6v-2h12v2zm0-3H6V9h12v2zm0-3H6V6h12v2z"/></svg>
-        </div>
-        <p class="servicio-title">Asesoría para Emprendedores</p>
-        <p class="servicio-desc">¿Lo intentaste solo y te perdiste? Sin juicio. Revisamos lo que tienes, ordenamos el caos y te decimos exactamente qué hacer primero. Una sesión puede ahorrarte meses de errores.</p>
-        <div class="servicio-tags">
-          <span class="servicio-tag">1:1</span>
-          <span class="servicio-tag">Diagnóstico</span>
-          <span class="servicio-tag">Hoja de ruta</span>
-        </div>
-      </div>
-
-    </div>
-
-    <!-- Bloque canales integrados -->
-    <div class="canales-block reveal">
-      <div class="canales-text">
-        <span class="section-eyebrow">ecosistema de canales</span>
-        <h3>No es solo un logo.<br>Es cómo suenas en <em>TikTok</em>,<br>cómo vendes en <em>Instagram</em><br>y cómo te encuentran<br>en <em>Google.</em></h3>
-        <p>Pensamos tu marca en todos los canales al mismo tiempo — con un solo lenguaje visual y un solo mensaje. Lo que publicas en TikTok tiene que hablar igual que tu landing, que tu Instagram, que tu WhatsApp.</p>
-      </div>
-      <div class="canales-list">
-        <div class="canal-item">
-          <div class="canal-dot"></div>
-          <div>
-            <p class="canal-name">Instagram</p>
-            <p class="canal-desc">Vitrina de marca, venta social y construcción de comunidad. Feed coherente, highlights diseñados, bio optimizada.</p>
-          </div>
-        </div>
-        <div class="canal-item">
-          <div class="canal-dot"></div>
-          <div>
-            <p class="canal-name">TikTok</p>
-            <p class="canal-desc">Descubrimiento y viralidad. Contenido que muestra lo que haces, lo que vendes y la experiencia de tu marca.</p>
-          </div>
-        </div>
-        <div class="canal-item">
-          <div class="canal-dot"></div>
-          <div>
-            <p class="canal-name">Landing Page</p>
-            <p class="canal-desc">El destino que convierte. Donde tu Reel o campaña llega a cerrar la venta — no a perder al cliente.</p>
-          </div>
-        </div>
-        <div class="canal-item">
-          <div class="canal-dot"></div>
-          <div>
-            <p class="canal-name">WhatsApp Business</p>
-            <p class="canal-desc">El canal donde el emprendedor chileno cierra negocios. Lo configuramos con tu identidad y tus respuestas.</p>
-          </div>
-        </div>
-      </div>
-    </div>
-
-  </div>
-</section>
-
-<!-- ══ CÓMO TRABAJAMOS ══ -->
-<div class="divider"></div>
-<section class="how-section" id="como">
-  <div class="how-inner">
-    <span class="section-eyebrow reveal">cómo trabajamos</span>
-    <h2 class="section-h2 reveal">Diagnóstico primero.<br><em>Resultados</em> después.</h2>
-    <p class="section-lead reveal" style="max-width:100%">Sin plantillas. Sin adornos. Cada proyecto parte desde la verdad de tu negocio.</p>
-    <div class="how-steps">
-      <div class="how-step reveal">
-        <div class="how-step-num">01</div>
-        <p class="how-step-title">Levantamiento</p>
-        <p class="how-step-desc">Escuchamos tu negocio, tu cliente y tus objetivos reales</p>
-      </div>
-      <div class="how-step reveal">
-        <div class="how-step-num">02</div>
-        <p class="how-step-title">Diagnóstico</p>
-        <p class="how-step-desc">Detectamos brechas de marca, tono, canales y look &amp; feel</p>
-      </div>
-      <div class="how-step reveal">
-        <div class="how-step-num">03</div>
-        <p class="how-step-title">Propuesta</p>
-        <p class="how-step-desc">Branding, naming, arte, visuales y piezas clave con foco comercial</p>
-      </div>
-      <div class="how-step reveal">
-        <div class="how-step-num">04</div>
-        <p class="how-step-title">Ejecución</p>
-        <p class="how-step-desc">Creatividad alineada a ventas, no a likes. Sin burocracia</p>
-      </div>
-      <div class="how-step reveal">
-        <div class="how-step-num">05</div>
-        <p class="how-step-title">Entrega</p>
-        <p class="how-step-desc">Resultados medibles, con soporte continuo y Gantt claro</p>
-      </div>
-    </div>
-    <div class="guarantee-block reveal">
-      <p><strong>Sin sorpresas.</strong> Antes de firmar, tienes claridad total de qué se hace, cuándo y para qué. Si en los primeros 30 días no ves avance concreto, conversamos.</p>
-    </div>
-  </div>
-</section>
-
-<!-- ══ PLANES ══ -->
-<div class="divider"></div>
-<section class="plans-section" id="planes">
-  <div class="plans-inner">
-    <div class="plans-header">
-      <span class="section-eyebrow reveal">fee mensual · contrato plan anual 12 meses</span>
-      <h2 class="section-h2 reveal">Menos que un junior.<br><em>Cerebro</em> senior.</h2>
-      <p class="section-lead reveal">Un diseñador freelance senior en Chile cobra entre $800.000 y $1.500.000 al mes — y solo hace piezas, no piensa tu marca. Aquí tienes dirección creativa, estrategia y ejecución. Por menos.</p>
-    </div>
-
-    <div class="plans-grid">
-      <!-- PLAN S -->
-      <article class="plan-card reveal">
-        <div>
-          <div class="plan-letter">S</div>
-          <div class="plan-name">small <strong>think</strong></div>
-        </div>
-        <p class="plan-desc">Para emprendedores y pymes que parten desde cero o quieren ordenar su marca. Restaurantes, tiendas, servicios locales — si tienes un negocio pero no tienes una marca, empezamos aquí.</p>
-        <ul class="plan-features">
-          <li><strong>Diagnóstico inicial de marca</strong> sin costo adicional</li>
-          <li>Logo + paleta + tipografía (brand starter)</li>
-          <li>Lineamiento simple de marca</li>
-          <li>3 diseños semanales para RRSS</li>
-          <li>1 concepto y slogan mensual</li>
-          <li>Perfil de Instagram configurado y alineado</li>
-          <li>Cronograma + soporte mensual</li>
-          <li class="dim">Sin landing pages ni motion graphics</li>
-        </ul>
-        <div class="plan-price">
-          <span class="plan-amount">$590.000</span>
-          <span class="plan-period">mensual · contrato plan anual 12 meses</span>
-          <a href="https://wa.me/56912345678?text=Hola%2C%20me%20interesa%20el%20plan%20S%20de%20humanthink" target="_blank" rel="noopener" class="plan-btn">quiero este plan</a>
-        </div>
-      </article>
-
-      <!-- PLAN M -->
-      <article class="plan-card featured reveal">
-        <div>
-          <div class="plan-letter">M</div>
-          <div class="plan-name">medium <strong>think</strong></div>
-        </div>
-        <p class="plan-desc">Para marcas que ya existen y quieren crecer en serio. Retail, clínicas, inmobiliarias, educación — cualquier pyme que necesite contenido que venda y canales que funcionen.</p>
-        <ul class="plan-features">
-          <li>Research + dirección creativa integral</li>
-          <li>2 campañas mensuales (Instagram + TikTok)</li>
-          <li>12 diseños + 2 motion graphics</li>
-          <li><strong>1 video corto mensual</strong> (formato Reels)</li>
-          <li><strong>1 landing page</strong> por trimestre</li>
-          <li>Reuniones + storytelling + Gantt</li>
-          <li class="highlight"><strong>Estrategia mensual</strong> con revisión de métricas</li>
-        </ul>
-        <div class="plan-price">
-          <span class="plan-amount">$980.000</span>
-          <span class="plan-period">mensual · contrato plan anual 12 meses</span>
-          <a href="https://wa.me/56912345678?text=Hola%2C%20me%20interesa%20el%20plan%20M%20de%20humanthink" target="_blank" rel="noopener" class="plan-btn">este es mi plan</a>
-        </div>
-      </article>
-
-      <!-- PLAN L -->
-      <article class="plan-card reveal">
-        <div>
-          <div class="plan-letter">L</div>
-          <div class="plan-name">large <strong>think</strong></div>
-        </div>
-        <p class="plan-desc">Para empresas que compiten en serio. Industria, salud, construcción, distribución — marcas que necesitan un socio creativo estratégico permanente, no un proveedor de turno.</p>
-        <ul class="plan-features">
-          <li>Diagnóstico estratégico y auditoría de marca</li>
-          <li>Dirección de arte senior dedicada</li>
-          <li>Estrategia de contenidos y campañas a medida</li>
-          <li>Producción audiovisual y motion graphics</li>
-          <li><strong>Landing pages bajo demanda</strong> (lanzamientos y campañas)</li>
-          <li><strong>Kit de ventas</strong> (dossier, presentación, catálogo)</li>
-          <li>Acompañamiento ejecutivo + consultoría comercial</li>
-          <li>Gestión de equipos creativos</li>
-          <li>Reportería y métricas de impacto mensual</li>
-        </ul>
-        <div class="plan-price">
-          <span class="plan-amount quote">desde $1.800.000</span>
-          <span class="plan-period">Propuesta personalizada · según alcance y objetivos</span>
-          <a href="https://wa.me/56912345678?text=Hola%2C%20me%20interesa%20el%20plan%20L%20de%20humanthink" target="_blank" rel="noopener" class="plan-btn">solicitar propuesta</a>
-        </div>
-      </article>
-    </div>
-
-    <p class="plans-note reveal">Valores referenciales Chile 2025 · IVA no incluido</p>
-
-    <!-- FAQ -->
-    <div class="faq-grid reveal">
-      <div class="faq-item">
-        <p class="faq-q">¿Puedo cambiar de plan?</p>
-        <p class="faq-a">Sí. Si tu negocio crece y necesitas más, ajustamos el plan sin penalidades.</p>
-      </div>
-      <div class="faq-item">
-        <p class="faq-q">¿Qué pasa al terminar el año?</p>
-        <p class="faq-a">Renovas o te vas — sin letra chica. La mayoría renueva porque los resultados hablan.</p>
-      </div>
-      <div class="faq-item">
-        <p class="faq-q">¿Cuándo veo resultados?</p>
-        <p class="faq-a">El diagnóstico es inmediato. Las primeras piezas en 2 semanas. El impacto de marca, en 90 días.</p>
-      </div>
-      <div class="faq-item">
-        <p class="faq-q">¿Hacen logos y branding desde cero?</p>
-        <p class="faq-a">Sí. Si no tienes marca o la que tienes ya no funciona, partimos desde el principio — naming, logo, paleta, tono y manual.</p>
-      </div>
-      <div class="faq-item">
-        <p class="faq-q">¿Puedo pedir solo una landing page?</p>
-        <p class="faq-a">Sí, como servicio independiente desde $180.000. Si después te sumas a un plan, ese valor se descuenta del primer mes.</p>
-      </div>
-      <div class="faq-item">
-        <p class="faq-q">¿Trabajan con emprendedores chicos?</p>
-        <p class="faq-a">Especialmente con ellos. Si lo intentaste solo y te perdiste, el plan S está diseñado exactamente para eso.</p>
-      </div>
-    </div>
-
-  </div>
-</section>
-
-<!-- ══ WHY ══ -->
-<section class="why-section">
-  <div class="why-inner">
-    <h2 class="section-h2 reveal">Las marcas que se recuerdan<br><em>no nacen así.</em><br>Las construyen.</h2>
-  </div>
-</section>
-
-<!-- ══ CTA FINAL ══ -->
-<section class="cta-section" id="contacto">
-  <div class="cta-bg-text">HT</div>
-  <div class="cta-content">
-    <span class="section-eyebrow reveal">hablemos</span>
-    <h2 class="section-h2 reveal">Tu marca tiene potencial.<br><em>Déjanos mostrártelo.</em></h2>
-    <p class="cta-desc reveal">30 minutos. Diagnóstico sin costo. Sin compromiso.<br>Solo la verdad de lo que necesita tu marca para crecer.</p>
-    <div class="cta-wa-wrap reveal">
-      <a href="https://wa.me/56912345678?text=Hola%2C%20quiero%20un%20diagn%C3%B3stico%20gratuito%20para%20mi%20marca" target="_blank" rel="noopener" class="btn-whatsapp">
-        <svg viewBox="0 0 24 24"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/></svg>
-        Escribir por WhatsApp
+    <div style="display:flex;align-items:center;gap:2rem">
+      <!-- Instagram -->
+      <a href="https://www.instagram.com/steinberg.leiva/" target="_blank" rel="noopener" class="nav-social" aria-label="Instagram">
+        <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round">
+          <rect x="2" y="2" width="20" height="20" rx="5"/><circle cx="12" cy="12" r="4"/><circle cx="17.5" cy="6.5" r="0.5" fill="currentColor"/>
+        </svg>
       </a>
-      <div class="cta-divider">o</div>
-      <p class="cta-note">Escríbenos a <strong>contacto@humanthink.cl</strong></p>
+      <!-- LinkedIn -->
+      <a href="https://www.linkedin.com/in/steinberg-leiva-arquitectos-36ba33186/" target="_blank" rel="noopener" class="nav-social" aria-label="LinkedIn">
+        <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round">
+          <rect x="2" y="2" width="20" height="20" rx="4"/><path d="M8 11v5M8 8v.01M12 16v-5M12 13a2 2 0 0 1 4 0v3"/>
+        </svg>
+      </a>
+      <a href="#contacto" class="nav-cta">Hablemos →</a>
     </div>
-  </div>
-</section>
-
-<!-- ══ FOOTER ══ -->
-<footer>
-  <a href="/">
-    <img src="img/logo-horizontal.png" alt="humanthink" class="footer-logo" width="120" height="18">
-    <img src="img/logo-block.png" alt="humanthink" class="footer-logo-block" width="50" height="28">
-  </a>
-  <nav class="footer-links">
-    <a href="#trabajos">trabajos</a>
-    <a href="#planes">planes</a>
-    <a href="#contacto">contacto</a>
-    <a href="https://www.instagram.com/humanthink.cl/" target="_blank" rel="noopener" class="footer-ig" aria-label="Instagram">
-      <svg viewBox="0 0 24 24"><path d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069zm0-2.163c-3.259 0-3.667.014-4.947.072-4.358.2-6.78 2.618-6.98 6.98-.059 1.281-.073 1.689-.073 4.948 0 3.259.014 3.668.072 4.948.2 4.358 2.618 6.78 6.98 6.98 1.281.058 1.689.072 4.948.072 3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.979-6.98.059-1.28.073-1.689.073-4.948 0-3.259-.014-3.667-.072-4.947-.196-4.354-2.617-6.78-6.979-6.98-1.281-.059-1.69-.073-4.949-.073zm0 5.838c-3.403 0-6.162 2.759-6.162 6.162s2.759 6.163 6.162 6.163 6.162-2.759 6.162-6.163c0-3.403-2.759-6.162-6.162-6.162zm0 10.162c-2.209 0-4-1.79-4-4 0-2.209 1.791-4 4-4s4 1.791 4 4c0 2.21-1.791 4-4 4zm6.406-11.845c-.796 0-1.441.645-1.441 1.44s.645 1.44 1.441 1.44c.795 0 1.439-.645 1.439-1.44s-.644-1.44-1.439-1.44z"/></svg>
-    </a>
   </nav>
-  <p class="footer-copy">© 2025 humanthink. Santiago, Chile.</p>
-</footer>
 
-<script>
-/* ── SLIDES ── */
-const slides = [
-  {concepto:'El deseo',        sub:'Conecta con lo que tu cliente desea sentir — antes de que lo piense.',  ideal:'Retail, moda, gastronomía, turismo, lifestyle'},
-  {concepto:'La felicidad',    sub:'Conecta con alegría, nostalgia y emociones positivas.',                  ideal:'Alimentos, retail, marcas familiares, experiencias'},
-  {concepto:'La seguridad',    sub:'Refuerza protección, confianza y estabilidad.',                          ideal:'Seguros, bancos, salud, inmobiliaria'},
-  {concepto:'El bienestar',    sub:'Transforma hábitos en experiencias positivas.',                          ideal:'Higiene, salud, cuidado personal, wellness'},
-  {concepto:'El vínculo',      sub:'Refuerza conexión, pertenencia y cuidado.',                              ideal:'Seguros de vida, educación, hogar'},
-  {concepto:'La pertenencia',  sub:'Activa identidad, tribu y validación social.',                           ideal:'Moda urbana, deporte, comunidades'},
-  {concepto:'La auto imagen',  sub:'Entrega control, proyección y seguridad personal.',                      ideal:'Belleza, cosmética, moda premium'},
-  {concepto:'La autenticidad', sub:'Conecta con confianza, naturalidad y plenitud.',                         ideal:'Marcas personales, bienestar, lifestyle'},
-  {concepto:null,              sub:'No vendes productos.',                                                    ideal:'Vendes emociones que el cliente quiere sentir.', final:true}
-];
+  <!-- ══════════════════════════════
+       HERO
+  ══════════════════════════════ -->
+  <section class="hero" id="inicio">
+    <div class="hero-left">
+      <span class="hero-index">Steinberg Leiva — Arquitectos</span>
 
-(function() {
-  var cur = 0, DUR = 10000, FADE = 550;
-  var wrap    = document.getElementById('slideFadeWrap');
-  var elCon   = document.getElementById('slideConcepto');
-  var elVende = document.querySelector('.slide-vende');
-  var elSub   = document.getElementById('slideSub');
-  var elIdeal = document.getElementById('slideIdeal');
-  var elH1    = document.querySelector('.slide-h1-fixed');
-  var bar     = document.getElementById('progressBar');
+      <h1 class="hero-title">
+        Espacios diseñados<br>para tu <em>forma</em><br>de vivir.
+      </h1>
 
-  /* Mobile imgs */
-  function setSlide(idx) {
-    var s = slides[idx];
-    if (s.final) {
-      elCon.textContent = 'No vendes productos.';
-      elVende.style.display = 'none';
-      elH1.style.fontSize = 'clamp(2.2rem,5vw,4.2rem)';
-    } else {
-      elCon.textContent = s.concepto;
-      elVende.style.display = '';
-      elH1.style.fontSize = '';
-    }
-    elSub.textContent   = s.sub;
-    elIdeal.textContent = s.ideal;
-  }
+      <p class="hero-sub">
+        Diseñamos y construimos, nuevos usos de los inmuebles respetando su valor y creando espacios funcionales y amables para tu vida.
+      </p>
 
-  function startBar() {
-    bar.style.transition = 'none'; bar.style.width = '0%';
-    bar.offsetWidth; /* reflow */
-    bar.style.transition = 'width '+(DUR/1000)+'s linear';
-    bar.style.width = '100%';
-  }
+      <a href="#portfolio" class="btn-primary">
+        Ver proyectos
+        <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+          <path d="M5 12h14M12 5l7 7-7 7"/>
+        </svg>
+      </a>
+    </div>
 
-  function goNext() {
-    wrap.style.opacity = '0';
-    setTimeout(function() {
-      cur = (cur + 1) % slides.length;
-      setSlide(cur);
-      wrap.style.opacity = '1';
-      startBar();
-    }, FADE);
-  }
+    <div class="hero-right">
+      <!-- REEMPLAZAR: foto principal del estudio/proyecto destacado -->
+      <img
+        src="imagenes/hero.jpg"
+        alt="Proyecto destacado Steinberg Leiva"
+        loading="eager"
+        width="1200"
+        height="900"
+      >
+      <span class="hero-caption">Santiago, Chile · 2024</span>
+    </div>
+  </section>
 
-  setSlide(0); startBar();
-  setInterval(goNext, DUR);
-  setTimeout(function() {
-    var cta = document.getElementById('heroCta');
-    if (cta) cta.style.opacity = '1';
-  }, 2200);
-})();
+  <!-- ══════════════════════════════
+       TRUST BAR
+  ══════════════════════════════ -->
+  <div class="trust-bar">
+    <div class="trust-item">
+      <span class="trust-num">2019</span>
+      <span class="trust-label">Desde</span>
+    </div>
+    <div class="trust-item">
+      <span class="trust-num">+60</span>
+      <span class="trust-label">Proyectos y obras</span>
+    </div>
+    <div class="trust-item">
+      <span class="trust-num">RM &amp; V</span>
+      <span class="trust-label">Trabajos en Región Metropolitana y Valparaíso</span>
+    </div>
+  </div>
 
-/* ── CARRUSELES ── */
-const carousels = {
-  dl365:    ['img/portfolio-dl365-1.png','img/portfolio-dl365-2.png','img/portfolio-dl365-3.png'],
-  rueda:    ['img/portfolio-larueda-1.png','img/portfolio-larueda-2.png','img/portfolio-larueda-3.png'],
-  interfaz: ['img/portfolio-interfaz-1.png','img/portfolio-interfaz-2.png','img/portfolio-interfaz-3.png'],
-  dossier:  ['img/portfolio-dossier-1.png','img/portfolio-dossier-2.png','img/portfolio-dossier-3.png'],
-  caso7:    ['img/portfolio-caso7-1.png','img/portfolio-caso7-2.png','img/portfolio-caso7-3.png'],
-  caso8:    ['img/portfolio-caso8-1.png','img/portfolio-caso8-2.png','img/portfolio-caso8-3.png'],
-  caso9:    ['img/portfolio-caso9-1.png','img/portfolio-caso9-2.png','img/portfolio-caso9-3.png']
-};
-let carouselImgs = [], carouselIdx = 0;
-function openCarousel(key) { carouselImgs = carousels[key]; carouselIdx = 0; renderCarousel(); document.getElementById('carouselModal').classList.add('open'); document.body.style.overflow='hidden'; }
-function renderCarousel() {
-  const track = document.getElementById('carouselTrack'), dots = document.getElementById('carouselDots');
-  track.innerHTML = ''; dots.innerHTML = '';
-  carouselImgs.forEach((src,i) => {
-    const img = document.createElement('img'); img.src=src; img.className='carousel-img'+(i===carouselIdx?' active':''); img.alt='imagen '+(i+1); track.appendChild(img);
-    const dot = document.createElement('span'); dot.className='carousel-dot'+(i===carouselIdx?' active':''); dot.onclick=()=>{carouselIdx=i;renderCarousel();}; dots.appendChild(dot);
-  });
-}
-function carouselNext() { carouselIdx=(carouselIdx+1)%carouselImgs.length; renderCarousel(); }
-function carouselPrev() { carouselIdx=(carouselIdx-1+carouselImgs.length)%carouselImgs.length; renderCarousel(); }
-function closeCarouselModalDirect() { document.getElementById('carouselModal').classList.remove('open'); document.body.style.overflow=''; }
-function closeCarouselModal(e) { if(e.target===document.getElementById('carouselModal')) closeCarouselModalDirect(); }
+  <!-- ══════════════════════════════
+       PROPUESTA
+  ══════════════════════════════ -->
+  <section class="propuesta" id="propuesta" aria-label="Quiénes somos">
+    <div>
+      <p class="section-eyebrow">Nuestra oficina</p>
+      <h2 class="section-title">Quiénes somos</h2>
+    </div>
 
-/* ── MODAL VIDEO ── */
-function openVideoModal(src) { document.getElementById('modalVideoIframe').src=src; document.getElementById('videoModal').classList.add('open'); document.body.style.overflow='hidden'; }
-function closeVideoModalDirect() { document.getElementById('modalVideoIframe').src=''; document.getElementById('videoModal').classList.remove('open'); document.body.style.overflow=''; }
-function closeVideoModal(e) { if(e.target===document.getElementById('videoModal')) closeVideoModalDirect(); }
-document.addEventListener('keydown', e => { if(e.key==='Escape'){closeVideoModalDirect();closeCarouselModalDirect();} });
+    <div class="pilares">
+      <div class="pilar">
+        <span class="pilar-num">01</span>
+        <div>
+          <p class="pilar-text">Somos Mariela Leiva y Arturo Steinberg, ambos arquitectos de la Universidad de Chile. Una mezcla profesional creativa y técnica, con experiencias y especializaciones diversas y complementarias.</p>
+        </div>
+      </div>
+      <div class="pilar">
+        <span class="pilar-num">02</span>
+        <div>
+          <p class="pilar-text">Nuestro trabajo se centra en la realización de proyectos de arquitectura y construcción, como de rehabilitación en edificaciones de valor patrimonial, considerando remodelación, ampliación, interiorismo, entre otros.</p>
+        </div>
+      </div>
+      <div class="pilar">
+        <span class="pilar-num">03</span>
+        <div>
+          <p class="pilar-text">También considera asesorías en relación con la compra o venta de inmuebles o terrenos, y su relación con los permisos y acciones necesarias para optimizar tu inversión.</p>
+        </div>
+      </div>
+      <div class="pilar">
+        <span class="pilar-num">04</span>
+        <div>
+          <p class="pilar-text">Contamos con un equipo de trabajo integral, compuesto por diversos profesionales especialistas, además de un equipo calificado para la ejecución de obras.</p>
+        </div>
+      </div>
+    </div>
+  </section>
 
-/* ── REVEAL ── */
-if (window.location.protocol !== 'file:') {
-  document.querySelectorAll('.reveal').forEach(el => el.classList.add('will-animate'));
-  const obs = new IntersectionObserver((entries) => {
-    entries.forEach((e,i) => {
-      if (e.isIntersecting) {
-        setTimeout(() => e.target.classList.add('visible'), i * 55);
-        obs.unobserve(e.target);
-      }
-    });
-  }, {threshold: 0.07, rootMargin:'0px 0px -40px 0px'});
-  document.querySelectorAll('.reveal').forEach(el => obs.observe(el));
-}
+  <!-- ══════════════════════════════
+       PORTFOLIO — 11 proyectos con carrusel
+  ══════════════════════════════ -->
+  <section class="portfolio" id="portfolio" aria-label="Proyectos destacados">
+    <div class="port-header">
+      <h2 class="port-title">Proyectos destacados</h2>
+      <a href="#contacto" class="btn-text">Contáctanos →</a>
+    </div>
 
-/* ── HAMBURGUESA ── */
-(function() {
-  var btn    = document.getElementById('navHamburger');
-  var drawer = document.getElementById('navDrawer');
-  var links  = drawer.querySelectorAll('.nav-drawer-link, .nav-drawer-cta');
+    <div class="proj-masonry">
 
-  function openMenu() {
-    btn.classList.add('open');
-    drawer.classList.add('open');
-    btn.setAttribute('aria-expanded', 'true');
-    drawer.setAttribute('aria-hidden', 'false');
-    document.body.style.overflow = 'hidden';
-  }
-  function closeMenu() {
-    btn.classList.remove('open');
-    drawer.classList.remove('open');
-    btn.setAttribute('aria-expanded', 'false');
-    drawer.setAttribute('aria-hidden', 'true');
-    document.body.style.overflow = '';
-  }
+      <!-- FILA 1: 3 carruseles -->
+      <div class="proj-row">
+        <div class="proj-card">
+          <div class="proj-carousel">
+            <div class="proj-carousel-track">
+              <img src="imagenes/p1-a.jpg" alt="Ampliación tercer nivel vivienda HA1" loading="lazy">
+              <img src="imagenes/p1-b.jpg" alt="Ampliación tercer nivel vivienda HA1" loading="lazy">
+              <img src="imagenes/p1-c.jpg" alt="Ampliación tercer nivel vivienda HA1" loading="lazy">
+            </div>
+            <button class="carousel-btn prev" aria-label="Anterior">&#8592;</button>
+            <button class="carousel-btn next" aria-label="Siguiente">&#8594;</button>
+            <div class="carousel-dots"><span class="dot active"></span><span class="dot"></span><span class="dot"></span></div>
+            <div class="proj-card-info">
+              <p class="proj-cat">Diseño y obra</p>
+              <p class="proj-name">Ampliación tercer nivel vivienda en HA1</p>
+            </div>
+          </div>
+        </div>
 
-  btn.addEventListener('click', function() {
-    btn.classList.contains('open') ? closeMenu() : openMenu();
-  });
+        <div class="proj-card">
+          <div class="proj-carousel">
+            <div class="proj-carousel-track">
+              <img src="imagenes/p2-a.jpg" alt="Cocina y baño O1" loading="lazy">
+              <img src="imagenes/p2-b.jpg" alt="Cocina y baño O1" loading="lazy">
+              <img src="imagenes/p2-c.jpg" alt="Cocina y baño O1" loading="lazy">
+            </div>
+            <button class="carousel-btn prev" aria-label="Anterior">&#8592;</button>
+            <button class="carousel-btn next" aria-label="Siguiente">&#8594;</button>
+            <div class="carousel-dots"><span class="dot active"></span><span class="dot"></span><span class="dot"></span></div>
+            <div class="proj-card-info">
+              <p class="proj-cat">Diseño y obra</p>
+              <p class="proj-name">Cocina y baño O1</p>
+            </div>
+          </div>
+        </div>
 
-  links.forEach(function(link) {
-    link.addEventListener('click', closeMenu);
-  });
+        <div class="proj-card">
+          <div class="proj-carousel">
+            <div class="proj-carousel-track">
+              <img src="imagenes/p3-a.jpg" alt="Remodelación restaurant @dondelaberni" loading="lazy">
+              <img src="imagenes/p3-b.jpg" alt="Remodelación restaurant @dondelaberni" loading="lazy">
+              <img src="imagenes/p3-c.jpg" alt="Remodelación restaurant @dondelaberni" loading="lazy">
+            </div>
+            <button class="carousel-btn prev" aria-label="Anterior">&#8592;</button>
+            <button class="carousel-btn next" aria-label="Siguiente">&#8594;</button>
+            <div class="carousel-dots"><span class="dot active"></span><span class="dot"></span><span class="dot"></span></div>
+            <div class="proj-card-info">
+              <p class="proj-cat">Interiorismo</p>
+              <p class="proj-name">Remodelación restaurant @dondelaberni</p>
+            </div>
+          </div>
+        </div>
+      </div>
 
-  document.addEventListener('keydown', function(e) {
-    if (e.key === 'Escape') closeMenu();
-  });
-})();
+      <!-- FILA 2: 3 carruseles -->
+      <div class="proj-row">
+        <div class="proj-card">
+          <div class="proj-carousel">
+            <div class="proj-carousel-track">
+              <img src="imagenes/p4-a.jpg" alt="Oficina y escalera, Facultad de Arquitectura 1" loading="lazy">
+              <img src="imagenes/p4-b.jpg" alt="Oficina y escalera, Facultad de Arquitectura 1" loading="lazy">
+              <img src="imagenes/p4-c.jpg" alt="Oficina y escalera, Facultad de Arquitectura 1" loading="lazy">
+            </div>
+            <button class="carousel-btn prev" aria-label="Anterior">&#8592;</button>
+            <button class="carousel-btn next" aria-label="Siguiente">&#8594;</button>
+            <div class="carousel-dots"><span class="dot active"></span><span class="dot"></span><span class="dot"></span></div>
+            <div class="proj-card-info">
+              <p class="proj-cat">Diseño y obra</p>
+              <p class="proj-name">Oficina y escalera, Facultad de Arquitectura 1</p>
+            </div>
+          </div>
+        </div>
 
-/* (CTA WhatsApp — no requiere JS) */
-</script>
+        <div class="proj-card">
+          <div class="proj-carousel">
+            <div class="proj-carousel-track">
+              <img src="imagenes/p5-a.jpg" alt="Oficina Abogados de DDHH" loading="lazy">
+              <img src="imagenes/p5-b.jpg" alt="Oficina Abogados de DDHH" loading="lazy">
+              <img src="imagenes/p5-c.jpg" alt="Oficina Abogados de DDHH" loading="lazy">
+            </div>
+            <button class="carousel-btn prev" aria-label="Anterior">&#8592;</button>
+            <button class="carousel-btn next" aria-label="Siguiente">&#8594;</button>
+            <div class="carousel-dots"><span class="dot active"></span><span class="dot"></span><span class="dot"></span></div>
+            <div class="proj-card-info">
+              <p class="proj-cat">Interiorismo</p>
+              <p class="proj-name">Oficina Abogados de DDHH</p>
+            </div>
+          </div>
+        </div>
+
+        <div class="proj-card">
+          <div class="proj-carousel">
+            <div class="proj-carousel-track">
+              <img src="imagenes/p6-a.jpg" alt="Vivienda en HA2" loading="lazy">
+              <img src="imagenes/p6-b.jpg" alt="Vivienda en HA2" loading="lazy">
+              <img src="imagenes/p6-c.jpg" alt="Vivienda en HA2" loading="lazy">
+            </div>
+            <button class="carousel-btn prev" aria-label="Anterior">&#8592;</button>
+            <button class="carousel-btn next" aria-label="Siguiente">&#8594;</button>
+            <div class="carousel-dots"><span class="dot active"></span><span class="dot"></span><span class="dot"></span></div>
+            <div class="proj-card-info">
+              <p class="proj-cat">Interiorismo</p>
+              <p class="proj-name">Vivienda en HA2</p>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- FILA 3: 1 carrusel + 2 cajas de descarga -->
+      <div class="proj-row">
+        <div class="proj-card">
+          <div class="proj-carousel">
+            <div class="proj-carousel-track">
+              <img src="imagenes/p8-a.jpg" alt="Puente, galería y hall. Facultad de Arquitectura 1" loading="lazy">
+              <img src="imagenes/p8-b.jpg" alt="Puente, galería y hall. Facultad de Arquitectura 1" loading="lazy">
+              <img src="imagenes/p8-c.jpg" alt="Puente, galería y hall. Facultad de Arquitectura 1" loading="lazy">
+            </div>
+            <button class="carousel-btn prev" aria-label="Anterior">&#8592;</button>
+            <button class="carousel-btn next" aria-label="Siguiente">&#8594;</button>
+            <div class="carousel-dots"><span class="dot active"></span><span class="dot"></span><span class="dot"></span></div>
+            <div class="proj-card-info">
+              <p class="proj-cat">Diseño y obra</p>
+              <p class="proj-name">Puente, galería y hall. Facultad de Arquitectura 1</p>
+            </div>
+          </div>
+        </div>
+
+        <!-- Caja descarga — salmon -->
+        <a href="imagenes/brochure.pdf" target="_blank" rel="noopener" class="proj-card proj-download proj-download--salmon" aria-label="Descargar Brochure">
+          <span class="material-symbols-outlined proj-download-icon">system_update_alt</span>
+          <span class="proj-download-label">Brochure</span>
+        </a>
+
+        <!-- Caja Instagram — teal -->
+        <a href="https://www.instagram.com/steinberg.leiva/" target="_blank" rel="noopener" class="proj-card proj-download proj-download--teal" aria-label="Instagram">
+          <svg class="proj-download-icon-svg" viewBox="0 0 24 24" fill="none" stroke="#fff" stroke-width="1.4" stroke-linecap="round" stroke-linejoin="round">
+            <rect x="2" y="2" width="20" height="20" rx="5"/><circle cx="12" cy="12" r="4"/><circle cx="17.5" cy="6.5" r="1" fill="#fff" stroke="none"/>
+          </svg>
+          <span class="proj-download-label">Instagram</span>
+        </a>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- ══════════════════════════════
+       POR QUÉ ELEGIRNOS
+  ══════════════════════════════ -->
+  <section class="porque" id="porque" aria-label="Por qué elegirnos">
+    <div class="porque-header">
+      <p class="section-eyebrow">Por qué elegirnos</p>
+      <h2 class="section-title">Cómo trabajamos</h2>
+    </div>
+
+    <p class="porque-intro">
+      Porque diseñamos, construimos y gestionamos con el mismo cuidado. Nuestra forma de trabajar se basa en tres pilares:
+    </p>
+
+    <div class="porque-tabla">
+
+      <div class="porque-fila">
+        <div class="porque-fila-titulo">
+          <h3>Diagnóstico en base a la escucha y observación</h3>
+        </div>
+        <div class="porque-fila-texto">
+          <p>Te asesoramos y traducimos lo que necesitas en soluciones arquitectónicas sencillas y potentes. Proponemos soluciones adaptando los espacios a tu identidad preservando la esencia del inmueble.</p>
+        </div>
+      </div>
+
+      <div class="porque-fila">
+        <div class="porque-fila-titulo">
+          <h3>Calidad en lo que ves (y en lo que no)</h3>
+        </div>
+        <div class="porque-fila-texto">
+          <p>Diseñamos espacios modernos y flexibles para habitar la vida que quieres llevar. Nuestra ejecución respeta la normativa y el uso de materiales adecuados. Cuidando la estética, la habitabilidad técnica y el entorno.</p>
+        </div>
+      </div>
+
+      <div class="porque-fila">
+        <div class="porque-fila-titulo">
+          <h3>Gestión transparente y precio justo</h3>
+        </div>
+        <div class="porque-fila-texto">
+          <p>La confianza, es nuestro material de construcción más importante. Trabajamos con un modelo de presupuesto abierto, asegurando que puedas ver cómo tu inversión se transforme en valor real.</p>
+        </div>
+      </div>
+
+    </div>
+
+    <div class="porque-cierre">
+      <p class="porque-cierre-label">Nuestra promesa</p>
+      <p class="porque-cierre-text">
+        Te entregamos un espacio<br>
+        <em>a medida, funcional</em><br>
+        y listo para ser vivido.
+      </p>
+      <span class="porque-cierre-firma">Con la seguridad de una promesa cumplida.</span>
+    </div>
+  </section>
+
+  <!-- ══════════════════════════════
+       EQUIPO
+  ══════════════════════════════ -->
+  <section class="equipo" id="equipo" aria-label="El equipo">
+    <p class="section-eyebrow" style="margin-bottom:1rem">El equipo</p>
+    <h2 class="section-title" style="margin-bottom:3rem">Las personas detrás del proyecto</h2>
+
+    <div class="equipo-grid">
+
+      <!-- Arturo Steinberg — REEMPLAZAR foto -->
+      <div class="bio-card">
+        <div class="bio-foto">
+          <img src="imagenes/equipo-1.jpg" alt="Arturo Steinberg Acuña" loading="lazy" width="600" height="450">
+        </div>
+        <div class="bio-body">
+          <div class="bio-header">
+            <p class="bio-nombre">Arturo Steinberg Acuña</p>
+            <p class="bio-rol">Arquitecto / Socio</p>
+          </div>
+          <div class="bio-divider"></div>
+          <p class="bio-texto">
+            Arquitecto de la Universidad de Chile. Tiene especial interés en el diseño y construcción de obras de arquitectura, considerando la innovación y el detallamiento como parte esencial de su resolución. Tiene experiencia en el ámbito público y además privado en diversas oficinas, participando en proyectos de variadas envergaduras desde vivienda económica, hasta grandes centros deportivos y culturales, lo que le permite disponer de amplio conocimiento de una obra de arquitectura en todos sus ámbitos como el diseño, estructura, presupuesto, materialidad y logística en obra, entregando soluciones acordes a cada proyecto.
+          </p>
+          <div class="bio-tags">
+            <span>Arquitectura</span>
+            <span>Reforma</span>
+            <span>Detallamiento</span>
+            <span>Construcción</span>
+          </div>
+          <a href="https://www.linkedin.com/in/arturo-steinberg-11b13080/" target="_blank" rel="noopener" class="bio-linkedin">
+            <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+              <rect x="2" y="2" width="20" height="20" rx="4"/><path d="M8 11v5M8 8v.01M12 16v-5M12 13a2 2 0 0 1 4 0v3"/>
+            </svg>
+            Ver perfil
+          </a>
+        </div>
+      </div>
+
+      <!-- Mariela Leiva — REEMPLAZAR foto -->
+      <div class="bio-card">
+        <div class="bio-foto">
+          <img src="imagenes/equipo-2.jpg" alt="Mariela Leiva Silva" loading="lazy" width="600" height="450">
+        </div>
+        <div class="bio-body">
+          <div class="bio-header">
+            <p class="bio-nombre">Mariela Leiva Silva</p>
+            <p class="bio-rol">Arquitecta / Socia</p>
+          </div>
+          <div class="bio-divider"></div>
+          <p class="bio-texto">
+            Arquitecta de la Universidad de Chile. Tiene especial interés en la intervención e interiorismo de inmuebles existentes, con el fin de ponerlos en valor, conjugando los nuevos usos y necesidades de las personas, y la nueva vida que pueden abarcar. Tiene experiencia en el sector público, en formulación, diseño, inspección y asesoría de proyectos e iniciativas de arquitectura y patrimonio cultural. En el sector privado ha realizado diversos proyectos de diseño y obra, de mediana y pequeña escala, además de realizar investigaciones en patrimonio. Ha sido adjudicataria de Fondos como el FONPAT con el equipo de @patrimonioinmersivo.
+          </p>
+          <div class="bio-tags">
+            <span>Arquitectura</span>
+            <span>Reforma</span>
+            <span>Rehabilitación</span>
+            <span>Interiorismo</span>
+          </div>
+          <a href="https://www.linkedin.com/in/marielaleiva/" target="_blank" rel="noopener" class="bio-linkedin">
+            <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+              <rect x="2" y="2" width="20" height="20" rx="4"/><path d="M8 11v5M8 8v.01M12 16v-5M12 13a2 2 0 0 1 4 0v3"/>
+            </svg>
+            Ver perfil
+          </a>
+        </div>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- ══════════════════════════════
+       CONTACTO
+  ══════════════════════════════ -->
+  <section class="contacto" id="contacto" aria-label="Contacto">
+    <div class="contacto-left">
+      <p class="section-eyebrow">Contacto</p>
+      <h2 class="c-title">Trabajemos juntos</h2>
+      <p class="c-sub">
+        Cuéntanos tu proyecto. Respondemos en menos de 24 horas hábiles.
+      </p>
+      <div class="c-meta">
+        <strong>Email</strong><br>
+        <a href="mailto:hola@steinbergleiva.com" style="color:inherit;text-decoration:none">hola@steinbergleiva.com</a><br><br>
+        <strong>Teléfono</strong><br>
+        +56 9 XXXX XXXX<br><br>
+        <strong>Oficina</strong><br>
+        Santiago, Chile
+      </div>
+    </div>
+
+    <div class="contacto-right">
+      <form novalidate action="mailto:hola@steinbergleiva.com" method="POST" enctype="text/plain">
+        <div class="field">
+          <label for="nombre">Nombre</label>
+          <input type="text" id="nombre" name="nombre" placeholder="Tu nombre completo" required>
+        </div>
+        <div class="field">
+          <label for="email">Email</label>
+          <input type="email" id="email" name="email" placeholder="tu@email.com" required>
+        </div>
+        <div class="field">
+          <label for="tipo">Tipo de proyecto</label>
+          <select id="tipo" name="tipo">
+            <option value="">Selecciona una opción</option>
+            <option value="residencial">Residencial</option>
+            <option value="comercial">Comercial</option>
+            <option value="institucional">Institucional</option>
+            <option value="otro">Otro</option>
+          </select>
+        </div>
+        <div class="field">
+          <label for="mensaje">Mensaje</label>
+          <textarea id="mensaje" name="mensaje" placeholder="Cuéntanos sobre tu proyecto…"></textarea>
+        </div>
+        <div style="display:flex;gap:1rem;flex-wrap:wrap">
+          <button type="submit" class="btn-send">Enviar mensaje →</button>
+          <a href="https://wa.me/56900000000" target="_blank" rel="noopener" class="btn-wa">
+            <svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor">
+              <path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/>
+            </svg>
+            WhatsApp
+          </a>
+        </div>
+      </form>
+    </div>
+  </section>
+
+  <!-- ══════════════════════════════
+       FOOTER
+  ══════════════════════════════ -->
+  <footer>
+    <div class="footer-logo">
+      <img src="imagenes/logo-claro.svg" alt="Steinberg Leiva" width="100" height="44">
+    </div>
+    <a href="https://www.instagram.com/steinberg.leiva/" target="_blank" rel="noopener" class="footer-social" aria-label="Instagram">
+      <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="rgba(240,238,233,0.4)" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round">
+        <rect x="2" y="2" width="20" height="20" rx="5"/><circle cx="12" cy="12" r="4"/><circle cx="17.5" cy="6.5" r="1" fill="rgba(240,238,233,0.4)" stroke="none"/>
+      </svg>
+    </a>
+    <p>© 2025 Steinberg Leiva Arquitectos · Santiago, Chile</p>
+  </footer>
+
+  <!-- Scripts externos -->
+  <script src="js/script.js" defer></script>
+
 </body>
 </html>
