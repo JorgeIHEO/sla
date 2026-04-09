@@ -72,3 +72,78 @@ if(form){
     form.reset();
   });
 }
+
+
+// ── TRUST BAR — ANIMACIÓN TIPO CONTADOR ──────────────────────────
+function animateTrustNumbers(){
+  const items = [
+    { el: document.querySelectorAll('.trust-num')[0], final: '2019', prefix: '',  suffix: '', isYear: true },
+    { el: document.querySelectorAll('.trust-num')[1], final: '60',   prefix: '+', suffix: '', isYear: false },
+    { el: document.querySelectorAll('.trust-num')[2], final: null,   prefix: '',  suffix: '', isText: 'RM & V' },
+  ];
+
+  items.forEach(({ el, final, prefix, suffix, isYear, isText }) => {
+    if(!el) return;
+
+    if(isText){
+      // Typewriter para el texto RM & V
+      const text = 'RM & V';
+      el.textContent = '';
+      let i = 0;
+      const type = () => {
+        if(i <= text.length){
+          el.textContent = text.slice(0, i);
+          i++;
+          setTimeout(type, 80);
+        }
+      };
+      setTimeout(type, 400);
+      return;
+    }
+
+    if(isYear){
+      // Contador para el año
+      const start = 2000;
+      const end   = 2019;
+      const duration = 1400;
+      const startTime = performance.now();
+      const tick = (now) => {
+        const progress = Math.min((now - startTime) / duration, 1);
+        const eased    = 1 - Math.pow(1 - progress, 3);
+        const value    = Math.floor(start + (end - start) * eased);
+        el.textContent = prefix + value + suffix;
+        if(progress < 1) requestAnimationFrame(tick);
+        else el.textContent = prefix + end + suffix;
+      };
+      setTimeout(() => requestAnimationFrame(tick), 200);
+      return;
+    }
+
+    // Contador numérico normal (+60)
+    const end      = parseInt(final);
+    const duration = 1200;
+    const startTime = performance.now();
+    const tick = (now) => {
+      const progress = Math.min((now - startTime) / duration, 1);
+      const eased    = 1 - Math.pow(1 - progress, 3);
+      const value    = Math.floor(end * eased);
+      el.textContent = prefix + value + suffix;
+      if(progress < 1) requestAnimationFrame(tick);
+      else el.textContent = prefix + end + suffix;
+    };
+    setTimeout(() => requestAnimationFrame(tick), 300);
+  });
+}
+
+// Disparar cuando trust-bar entra en viewport
+const trustObserver = new IntersectionObserver(entries => {
+  entries.forEach(entry => {
+    if(entry.isIntersecting){
+      animateTrustNumbers();
+      trustObserver.disconnect();
+    }
+  });
+}, { threshold: 0.5 });
+
+const trustBar = document.querySelector('.trust-bar');
+if(trustBar) trustObserver.observe(trustBar);
