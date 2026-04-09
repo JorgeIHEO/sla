@@ -569,25 +569,36 @@ footer p{
    RESPONSIVE
 ══════════════════════════════ */
 @media(max-width:900px){
+  /* NAV mobile */
+  nav{padding:0.9rem 5%;}
+  .nav-logo img{height:36px;}
+  .nav-social{display:none;} /* ocultar iconos sociales en mobile */
+  .nav-cta{font-size:0.58rem;padding:0.5rem 1rem;letter-spacing:0.16em;}
+
   .hero{grid-template-columns:1fr;min-height:auto}
   .hero-left{padding:3rem 6% 4rem;border-right:none}
   .hero-right{min-height:60vw}
   .propuesta{grid-template-columns:1fr;gap:3rem;padding:5rem 6%}
   .proj-row{flex-direction:column}
   .proj-row--a .proj-col{flex-direction:row}
-  /* en mobile todas las imágenes usan la misma proporción */
   .proj-row--a .proj-card--tall .proj-carousel-track img{aspect-ratio:16/10}
   .contacto{grid-template-columns:1fr}
   .trust-bar{flex-wrap:wrap}
   .trust-item{min-width:50%}
   .port-header{flex-direction:column;align-items:flex-start;gap:1rem}
-  .nav-logo img{height:52px}
   .equipo-grid{grid-template-columns:1fr;gap:2rem}
   .bio-foto{aspect-ratio:3/2}
   .porque-fila{grid-template-columns:1fr}
   .porque-fila-titulo{border-right:none;border-bottom:1px solid var(--border);padding-bottom:1.4rem}
   .porque-fila-texto{padding-top:1.4rem}
 }
+
+@media(max-width:480px){
+  nav{padding:0.8rem 4%;}
+  .nav-logo img{height:30px;}
+  .nav-cta{font-size:0.55rem;padding:0.45rem 0.9rem;letter-spacing:0.12em;}
+}
+
 @media(max-width:600px){
   .proj-row--a .proj-col{flex-direction:column}
 }
